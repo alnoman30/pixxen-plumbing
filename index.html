@@ -1,0 +1,3062 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Physical plumbing</title>
+    <!-- Splide CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <!-- swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="bg-white">
+    <nav class="bg-[#144947] border-b border-[#1B5654]">
+      <div class="mx-auto">
+        <div class="flex items-center justify-between h-12">
+          <div class="flex items-center sm:gap-4 gap-3">
+            <!-- Desktop Sidebar Button -->
+            <button
+              id="desktop-sidebar"
+              aria-label="Toggle menu"
+              class="hidden lg:block text-[#10202F] hover:text-green2 xl:px-19 md:px-6 py-5 bg-[#1B5654] border-r border-r-[#1B5654] hover:bg-[#C4D520] cursor-pointer transition-colors"
+            >
+              <svg
+                width="42"
+                height="8"
+                viewBox="0 0 42 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="42" height="2" fill="#FFFFFF" />
+                <rect y="6" width="42" height="2" fill="#FFFFFF" />
+              </svg>
+            </button>
+            <!-- Mobile Hamburger -->
+            <button
+              id="mobile-menu-toggle"
+              class="lg:hidden text-white hover:text-[#0751A4] p-2 transition-colors"
+              aria-label="Toggle mobile menu"
+            >
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect y="12" width="32" height="2" fill="#FFFFFF" />
+                <rect y="18" width="32" height="2" fill="#FFFFFF" />
+              </svg>
+            </button>
+            <a href="index.html" class="flex items-center">
+              <!-- replace with your logo img -->
+              <img
+                src="assets/images/plumbing-pixxen-logo.svg"
+                alt="Pixxen"
+                class="img-fluid sm:w-auto w-34"
+              />
+            </a>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div
+            class="hidden lg:flex items-center space-x-6 xl:space-x-8 stack-sans-text"
+          >
+            <!-- ====== SERVICES DROPDOWN ====== -->
+            <div class="desktop-dropdown">
+              <a
+                href="#services"
+                class="text-white hover:text-[#86BD9F] transition-colors text-sm xl:text-base font-medium xl:font-semibold leading-5 xl:leading-[110%] desktop-dropdown-toggle"
+              >
+                Services<span class="desktop-dropdown-icon ml-1">+</span>
+              </a>
+
+              <!-- Mega panel: list LEFT + grid RIGHT -->
+              <div class="desktop-dropdown-menu">
+                <!-- LEFT: service items -->
+                <ul class="dropdown-service-list">
+                  <li>
+                    <a href="mobile-app-design.html">
+                      <span class="service-icon">
+                        <!-- Mobile icon -->
+                        <img
+                          src="assets/images/dropdownicon1.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      MOBILE APP DESIGN
+                    </a>
+                  </li>
+                  <li>
+                    <a href="dashboard-design.html">
+                      <span class="service-icon">
+                        <!-- Dashboard/pie icon -->
+                        <img
+                          src="assets/images/dropdownicon2.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      DASHBOARD DESIGN
+                    </a>
+                  </li>
+                  <li>
+                    <a href="website-design.html">
+                      <span class="service-icon">
+                        <!-- Monitor icon -->
+                        <img
+                          src="assets/images/dropdownicon3.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      WEBSITE DESIGN
+                    </a>
+                  </li>
+                  <li>
+                    <a href="web-application-design.html">
+                      <span class="service-icon">
+                        <!-- Laptop icon -->
+                        <img
+                          src="assets/images/dropdownicon4.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      WEB APP DESIGN
+                    </a>
+                  </li>
+                  <li>
+                    <a href="saas-design.html">
+                      <span class="service-icon">
+                        <!-- Desktop/screen icon -->
+                        <img
+                          src="assets/images/dropdownicon5.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      SAAS DESIGN
+                    </a>
+                  </li>
+                  <li>
+                    <a href="branding-design.html">
+                      <span class="service-icon">
+                        <!-- Brand/star icon -->
+                        <img
+                          src="assets/images/dropdownicon6.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      BRANDING
+                    </a>
+                  </li>
+                </ul>
+
+                <!-- right: items -->
+                <div class="flex items-end">
+                  <img src="assets/images/dropdown-shape.svg" alt />
+                </div>
+              </div>
+              <!-- end .desktop-dropdown-menu -->
+            </div>
+            <!-- ====== end SERVICES ====== -->
+
+            <a
+              href="case-study.html"
+              class="text-white hover:text-[#86BD9F] transition-colors text-sm xl:text-base font-medium xl:font-semibold leading-5 xl:leading-[110%]"
+              >Case Studies</a
+            >
+            <a
+              href="about.html"
+              class="text-white hover:text-[#86BD9F] transition-colors text-sm xl:text-base font-medium xl:font-semibold leading-5 xl:leading-[110%]"
+              >About</a
+            >
+            <a
+              href="blog.html"
+              class="text-white hover:text-[#86BD9F] transition-colors text-sm xl:text-base font-medium xl:font-semibold leading-5 xl:leading-[110%]"
+              >Blog</a
+            >
+            <a
+              href="contact.html"
+              class="text-white hover:text-[#86BD9F] transition-colors text-sm xl:text-base font-medium xl:font-semibold leading-5 xl:leading-[110%]"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Desktop Buttons -->
+          <div class="hidden lg:flex items-center anton">
+            <a
+              href="contact.html"
+              class="hidden mega-reveal-btn relative overflow-hidden cursor-pointer sm:block xl:px-12 md:px-5 py-3 text-white border border-[#1B5654] transition-all text-sm xl:text-base font-medium leading-5 farro"
+            >
+              <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                <span
+                  class="t-up text-sm xl:text-base font-medium text-white uppercase"
+                  >Contact</span
+                >
+                <span
+                  class="t-down text-sm xl:text-base font-medium text-white uppercase"
+                  >Contact</span
+                >
+              </div>
+            </a>
+            <a
+              href="contact.html"
+              class="xl:px-12 md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-[#C4D520] text-[#17232D] transition-colors text-sm xl:text-base font-medium leading-5 farro"
+            >
+              <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                <span
+                  class="t-up text-sm xl:text-base font-medium text-[#17232D] uppercase"
+                  >Let’s Connect</span
+                >
+                <span
+                  class="t-down text-sm xl:text-base font-medium text-[#17232D] uppercase"
+                  >Let’s Connect</span
+                >
+              </div>
+            </a>
+          </div>
+
+          <!-- Mobile LET'S CONNECT -->
+          <a
+            href="contact.html"
+            class="lg:hidden px-4 sm:px-5 mobile-letconnect mega-reveal-btn relative overflow-hidden cursor-pointer py-4 sm:py-4 bg-[#C4D520] text-[#17232D] transition-colors text-sm xl:text-base font-medium leading-5 farro"
+          >
+            <div class="text-mask sm:h-5 h-4 overflow-hidden flex flex-col">
+              <span
+                class="t-up text-sm xl:text-base font-medium text-[#17232D] uppercase"
+                >Let’s Connect</span
+              >
+              <span
+                class="t-down text-sm xl:text-base font-medium text-[#17232D] uppercase"
+                >Let’s Connect</span
+              >
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- ====================== MOBILE MENU (2-panel) ====================== -->
+      <!-- Dark overlay -->
+      <div id="mobile-overlay" class="mobile-overlay"></div>
+
+      <!-- Wrapper holds both panels -->
+      <div id="mobile-menu-wrapper" class="mobile-menu-wrapper">
+        <!-- PANEL 1: Main Menu -->
+        <div id="mm-main" class="mm-panel mm-main">
+          <div class="mm-main-header">
+            <span class="mm-title">Menu</span>
+            <button id="mm-close" class="mm-close-btn" aria-label="Close menu">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <ul class="mm-nav-list">
+            <li>
+              <!-- SERVICES: opens panel 2 -->
+              <button
+                id="mm-services-trigger"
+                class="mm-nav-link w-full text-left"
+                style="background: none; border: none; cursor: pointer"
+              >
+                SERVICES
+                <span class="mm-plus">+</span>
+              </button>
+            </li>
+            <li>
+              <a href="case-study.html" class="mm-nav-link">case studies</a>
+            </li>
+            <li><a href="about.html" class="mm-nav-link">about</a></li>
+            <li><a href="blog.html" class="mm-nav-link">blog</a></li>
+            <li><a href="contact.html" class="mm-nav-link">contact</a></li>
+            <li><a href="team.html" class="mm-nav-link">team</a></li>
+            <li>
+              <div class="flex justify-start mt-8 mx-4">
+                <a
+                  href="contact.html"
+                  class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-[#C4D520] font-normal xl:font-medium farro transition-all duration-200"
+                >
+                  <div class="btn-inner relative z-2 flex items-center gap-3">
+                    <div
+                      class="icon-circle h-6 w-6 rounded-full bg-[#001409] flex items-center justify-center overflow-hidden"
+                    >
+                      <div class="icon-slider flex flex-row">
+                        <svg
+                          class="arrow-icon w-4 h-4 shrink-0 mx-2.5"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                            fill="#C4D520"
+                          />
+                        </svg>
+                        <svg
+                          class="arrow-icon w-4 h-4 shrink-0 mx-2.5"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                            fill="#C4D520"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="text-mask h-5 overflow-hidden flex flex-col">
+                      <span
+                        class="t-up text-sm xl:text-base font-medium text-[#11171F]"
+                        >Let’s Connect</span
+                      >
+                      <span
+                        class="t-down text-sm xl:text-base font-mediumtext-[#11171F]"
+                        >Let’s Connect</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <!-- LET'S CONNECT -->
+          <div>
+            <div>
+              <div class="w-full flex justify-end">
+                <img
+                  src="assets/images/menu-mobile-shape.svg"
+                  class="img-fluid sm:w-auto w-47.5"
+                  alt="mobile menu"
+                />
+              </div>
+              <img
+                src="assets/images/plumbing-mobile-footer-logo.svg"
+                class="img-fluid w-full"
+                alt="mobile menu"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 2: Services -->
+        <div id="mm-services" class="mm-panel mm-services">
+          <div class="mm-services-header">
+            <button id="mm-back" class="mm-back-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M19 12H5M11 6l-6 6 6 6"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              BACK
+            </button>
+            <button
+              id="mm-services-close"
+              class="mm-close-btn"
+              aria-label="Close menu"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div>
+            <div class="mm-services-title">Services</div>
+
+            <!-- 2×3 grid -->
+            <div class="mm-services-grid">
+              <!-- Mobile App Design -->
+              <a href="mobile-app-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon1.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">MOBILE APP DESIGN</span>
+              </a>
+              <!-- Dashboard Design -->
+              <a href="dashboard-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon2.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">DASHBOARD DESIGN</span>
+              </a>
+              <!-- Website Design -->
+              <a href="website-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon3.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">WEBSITE DESIGN</span>
+              </a>
+              <!-- Web App Design -->
+              <a href="web-application-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon4.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">WEB APP DESIGN</span>
+              </a>
+              <!-- SaaS Design -->
+              <a href="saas-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon5.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">SAAS DESIGN</span>
+              </a>
+              <!-- Branding -->
+              <a href="branding-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon6.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">BRANDING</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- decorative bottom grid -->
+          <div>
+            <div>
+              <div class="w-full flex justify-end">
+                <img
+                  src="assets/images/menu-mobile-shape.svg"
+                  class="img-fluid sm:w-auto w-47.5"
+                  alt="mobile menu"
+                />
+              </div>
+              <img
+                src="assets/images/plumbing-mobile-footer-logo.svg"
+                class="img-fluid w-full"
+                alt="mobile menu"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end mobile-menu-wrapper -->
+    </nav>
+
+    <!-- FULL PAGE MENU -->
+    <div
+      id="pixxen-menu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Main navigation"
+    >
+      <!-- TOP PANEL: slides in from top -->
+      <div class="menu-top" id="menu-top">
+        <!-- Grid decoration top-left -->
+        <div class="deco-cross" style="top: 0px; left: 0px">
+          <img src="assets/images/large-menu-top.svg" class="img-fluid" alt />
+        </div>
+
+        <!-- Grid decoration top-right area -->
+        <div class="deco-cross" style="bottom: 0px; right: 0px">
+          <img
+            src="assets/images/large-menu-bottom.svg"
+            class="img-fluid"
+            alt
+          />
+        </div>
+
+        <!-- LET'S CONNECT -->
+
+        <a
+          href="contact.html"
+          class="xl:px-12 connect-btn md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-[#C4D520] text-[#11171F] transition-colors text-sm xl:text-base font-medium leading-5 farro"
+        >
+          <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+            <span
+              class="t-up text-sm xl:text-base font-medium text-[#11171F] uppercase"
+              >Let’s Connect</span
+            >
+            <span
+              class="t-down text-sm xl:text-base font-medium text-[#11171F] uppercase"
+              >Let’s Connect</span
+            >
+          </div>
+        </a>
+
+        <!-- CLOSE BUTTON -->
+        <div class="close-wrap">
+          <button class="close-btn" id="menu-close" aria-label="Close menu">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 6L18 18M6 18L18 6"
+                stroke="white"
+                stroke-width="2.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- NAV LINKS -->
+        <nav class="nav-columns" id="nav-columns">
+          <div class="nav-col" id="col-services">
+            <div class="nav-col-title">Services</div>
+            <ul>
+              <li><a href="mobile-app-design.html">Mobile App Design</a></li>
+              <li><a href="dashboard-design.html">Dashboard Design</a></li>
+              <li><a href="website-design.html">Website Design</a></li>
+              <li><a href="web-application-design.html">Web App Design</a></li>
+              <li><a href="saas-design.html">SaaS Design</a></li>
+              <li><a href="branding-design.html">Branding</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-col" id="col-pixxen">
+            <div class="nav-col-title">Pixxen</div>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="case-study.html">Case Studies</a></li>
+              <li><a href="team.html">Team</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-col" id="col-resources">
+            <div class="nav-col-title">Resources</div>
+            <ul>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="blog.html">Blogs</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-col" id="col-legal">
+            <div class="nav-col-title">Legal</div>
+            <ul>
+              <li><a href="terms.html">Terms</a></li>
+              <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- /menu-top -->
+
+      <!-- BOTTOM PANEL: slides in from bottom (logo bar) -->
+      <div class="menu-bottom" id="menu-bottom">
+        <!-- LOGO -->
+        <div class="bottom-logo" id="bottom-logo">
+          <img
+            src="assets/images/plumbing-footer-pixxen-logo.svg"
+            class="img-fluid"
+            alt="largemenu"
+          />
+        </div>
+      </div>
+      <!-- /menu-bottom -->
+    </div>
+    <!-- / FULL PAGE MENU -->
+
+    <!-- Banner section -->
+    <section
+      id="therappy-banner-section"
+      class="bg-white w-full min-h-[95vh] grid grid-cols-1 xl:grid-cols-12 overflow-hidden pb-12 md:pb-16 lg:pb-20 xl:pb-0 mt-12"
+    >
+      <!-- Left Column: Content -->
+      <div
+        class="relative xl:col-span-6 flex flex-col p-4 pt-12 md:px-8 md:pt-16 md:pb-6 lg:px-12 lg:pb-10 lg:pt-20"
+      >
+        <div class="xl:max-w-184">
+          <!-- Main Heading -->
+          <h1
+            class="plumbing-hero-title anton text-[#11171F] text-[32px] md:text-[44px] lg:text-[56px] xl:text-[76px] font-normal leading-[110%]"
+          >
+            Plumbing Website Design That Books More Service Calls
+          </h1>
+
+          <!-- Description -->
+          <p
+            class="plumbing-hero-desc farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] xl:max-w-152.5 mt-3 md:mt-4 lg:mt-6"
+          >
+            Your restoration website should quickly reassure stressed homeowners
+            and turn emergency visitors into qualified leads.
+          </p>
+
+          <!-- Primary button -->
+          <div class="plumbing-hero-cta mt-3 md:mt-5 lg:mt-6">
+            <!-- Primary button -->
+            <a
+              href="#"
+              data-hover-bg="#144947"
+              data-hover-text="#ffffff"
+              class="plumbing-cta relative inline-flex overflow-hidden rounded-full bg-[#C4D520] px-5 py-3.5 md:px-8 md:py-4.5 anton text-[#11171F] text-sm md:text-xl font-normal leading-none transition-transform duration-300 active:scale-[0.97]"
+            >
+              <span
+                class="plumbing-cta-fill pointer-events-none absolute left-0 top-0 rounded-full"
+              ></span>
+              <span class="plumbing-cta-label relative block"
+                >Book a Free 30-Min Call</span
+              >
+            </a>
+          </div>
+
+          <!-- Bullet Points -->
+          <ul
+            class="plumbing-hero-checks space-y-1 md:space-y-2 stack-sans-text text-[#3F4957] farro text-xs md:text-base font-normal leading-[150%] my-3 md:my-5 lg:my-6"
+          >
+            <li class="plumbing-hero-check-item flex items-center space-x-3">
+              <img
+                src="assets/images/plumbing-banner-check.svg"
+                alt="check"
+                class="w-3.5 md:w-5.25 object-contain"
+              />
+              <span>Trusted by salons and spas across the US</span>
+            </li>
+            <li class="plumbing-hero-check-item flex items-center space-x-3">
+              <img
+                src="assets/images/plumbing-banner-check.svg"
+                alt="check"
+                class="w-3.5 md:w-5.25 object-contain"
+              />
+              <span>You own the site, content, and domain</span>
+            </li>
+            <li class="plumbing-hero-check-item flex items-center space-x-3">
+              <img
+                src="assets/images/plumbing-banner-check.svg"
+                alt="check"
+                class="w-3.5 md:w-5.25 object-contain"
+              />
+              <span>14-day delivery</span>
+            </li>
+            <li class="plumbing-hero-check-item flex items-center space-x-3">
+              <img
+                src="assets/images/plumbing-banner-check.svg"
+                alt="check"
+                class="w-3.5 md:w-5.25 object-contain"
+              />
+              <span>No retainers</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Pricing Box -->
+        <div class="plumbing-hero-pricebox flex flex-col mt-auto">
+          <div
+            class="farro text-[#171E27] text-[28px] md:text-[36px] lg:text-[48px] font-bold leading-[110%]"
+          >
+            USD 999<span class="text-base md:text-xl lg:text-2xl"
+              >/one-time</span
+            >
+          </div>
+          <span
+            class="farro text-[#171E27] text-xs md:text-base lg:text-xl font-bold leading-[150%] mt-1"
+          >
+            Everything Included
+          </span>
+        </div>
+
+        <!-- hammer image (Visible only on xl+ devices) -->
+        <div
+          class="hidden xl:block absolute right-10 bottom-20 max-w-58.75 max-h-78.75"
+        >
+          <img
+            src="assets/images/plumbing-hammer.png"
+            alt=""
+            class="select-none pointer-events-none"
+          />
+        </div>
+      </div>
+
+      <!-- Right Column: Single Image -->
+      <div
+        class="xl:col-span-6 relative w-full flex items-center justify-center px-4"
+      >
+        <img
+          src="assets/images/plumbing-banner-person.webp"
+          alt="Plumbing Website Design Showcase"
+          class="w-full max-w-248 xl:max-w-none h-auto object-contain"
+        />
+      </div>
+    </section>
+
+    <!-- Nine Reasons Most Plumbing Websites Lose Homeowners With Active Leaks -->
+    <section class="relative bg-[#FFFAEB] py-12 md:py-16 lg:py-20 xl:py-24">
+      <div class="container">
+        <!-- Grid lines (background layer) -->
+        <div
+          class="pointer-events-none absolute inset-0 z-0"
+          aria-hidden="true"
+        >
+          <div class="container relative mx-auto flex h-full justify-between">
+            <span class="h-full w-px bg-[#144947] opacity-[0.12]"></span>
+            <span class="h-full w-px bg-[#144947] opacity-[0.12]"></span>
+            <span class="h-full w-px bg-[#144947] opacity-[0.12]"></span>
+            <span class="h-full w-px bg-[#144947] opacity-[0.12]"></span>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center text-center max-w-248 mx-auto mb-6 md:mb-10 lg:mb-12"
+        >
+          <!-- Top Badge -->
+          <div
+            class="inline-flex items-center gap-1 md:gap-2 p-1.5 pr-3 rounded-full bg-[#FFDED7] anton text-[#C42904] text-xs md:text-base lg:text-lg xl:text-xl font-normal leading-6 uppercase mb-3 lg:mb-4.5 xl:mb-6"
+          >
+            <img
+              src="assets/images/plumbing-red-exclaimation.svg"
+              alt="exclaimation"
+              class="w-4 h-4 lg:w-5 lg:h-5 xl:w-6 xl:h-6 object-contain"
+            />
+            The Real Problems
+          </div>
+
+          <!-- Main Heading -->
+          <h2
+            class="anton text-[#171E27] text-2xl md:text-[32px] lg:text-[48px] xl:text-[56px] font-normal leading-[120%] mb-3 lg:mb-4.5 xl:mb-6"
+          >
+            Nine Reasons Most Plumbing Websites Lose Homeowners With Active
+            Leaks
+          </h2>
+
+          <!-- Subtitle Description -->
+          <p
+            class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%]"
+          >
+            Independent plumbers compete against Roto-Rooter, Mr. Rooter, ARS,
+            and dozens of franchises spending serious money on Google Ads. Most
+            independent plumbing sites we audit are leaking emergency calls in
+            ways the owner hasn't noticed yet.
+          </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 w-full px-1.5 sm:px-2"
+        >
+          <!-- Card 1 -->
+          <div
+            class="group bg-white p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between relative overflow-hidden shadow-[4px_8px_32px_0_rgba(0,0,0,0.08)] ring-1 ring-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:hover:-translate-y-2 hover:shadow-[8px_20px_48px_0_rgba(17,23,31,0.16)] hover:ring-[#C4D520]/40"
+          >
+            <!-- Accent bar sweep -->
+            <span
+              class="pointer-events-none absolute inset-x-0 bottom-0 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+            ></span>
+
+            <!-- Soft glow -->
+            <span
+              class="pointer-events-none absolute -top-16 -right-16 w-40 h-40 rounded-full bg-[#C4D520]/20 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            ></span>
+
+            <div
+              class="relative flex items-center justify-between mb-3 md:mb-4 lg:mb-6"
+            >
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 rounded-xl md:rounded-[14px] lg:rounded-2xl bg-[#C4D520] text-[#11171F] anton font-normal leading-[130%] text-2xl md:text-[28px] lg:text-[30px] xl:text-[32px] flex items-center justify-center transition-all duration-300 group-hover:bg-[#11171F] group-hover:text-[#C4D520] motion-safe:group-hover:scale-105 motion-safe:group-hover:-rotate-3"
+              >
+                1
+              </div>
+              <div
+                class="w-8 h-8 md:w-10 md:h-10 lg:w-9 lg:h-9 xl:w-12 xl:h-12 rounded-full bg-[#FFDED7] flex items-center justify-center transition-transform duration-300 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-12"
+              >
+                <img
+                  src="assets/images/plumbing-red-exclaimation.svg"
+                  alt="exclaimation"
+                  class="w-4 h-4 md:w-5 md:h-5 lg:w-4.5 lg:h-4.5 xl:w-6 xl:h-6 object-contain"
+                />
+              </div>
+            </div>
+
+            <div class="relative flex flex-col grow">
+              <h3
+                class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize mb-3 xl:mb-4 transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+              >
+                No Insurance-Claim Expertise Messaging
+              </h3>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] transition-colors duration-300 group-hover:text-[#11171F]"
+              >
+                Storm-damage claims are the highest-margin work in most markets,
+                and the homeowner searching insurance-approved roofer bounces
+                from any site that does not mention claim assistance,
+                supplements, or carrier experience.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="group bg-white p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between relative overflow-hidden shadow-[4px_8px_32px_0_rgba(0,0,0,0.08)] ring-1 ring-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:hover:-translate-y-2 hover:shadow-[8px_20px_48px_0_rgba(17,23,31,0.16)] hover:ring-[#C4D520]/40"
+          >
+            <!-- Accent bar sweep -->
+            <span
+              class="pointer-events-none absolute inset-x-0 bottom-0 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+            ></span>
+
+            <!-- Soft glow -->
+            <span
+              class="pointer-events-none absolute -top-16 -right-16 w-40 h-40 rounded-full bg-[#C4D520]/20 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            ></span>
+
+            <div
+              class="relative flex items-center justify-between mb-3 md:mb-4 lg:mb-6"
+            >
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 rounded-xl md:rounded-[14px] lg:rounded-2xl bg-[#C4D520] text-[#11171F] anton font-normal leading-[130%] text-2xl md:text-[28px] lg:text-[30px] xl:text-[32px] flex items-center justify-center transition-all duration-300 group-hover:bg-[#11171F] group-hover:text-[#C4D520] motion-safe:group-hover:scale-105 motion-safe:group-hover:-rotate-3"
+              >
+                2
+              </div>
+              <div
+                class="w-8 h-8 md:w-10 md:h-10 lg:w-9 lg:h-9 xl:w-12 xl:h-12 rounded-full bg-[#FFDED7] flex items-center justify-center transition-transform duration-300 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-12"
+              >
+                <img
+                  src="assets/images/plumbing-red-exclaimation.svg"
+                  alt="exclaimation"
+                  class="w-4 h-4 md:w-5 md:h-5 lg:w-4.5 lg:h-4.5 xl:w-6 xl:h-6 object-contain"
+                />
+              </div>
+            </div>
+
+            <div class="relative flex flex-col grow">
+              <h3
+                class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize mb-3 xl:mb-4 transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+              >
+                Financing Partnerships Hidden Or Missing
+              </h3>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] transition-colors duration-300 group-hover:text-[#11171F]"
+              >
+                Average residential reroof in 2026 hit $14,500. Without
+                GreenSky, Sunlight Financial, or Service Finance visible, you
+                lose every cash-strapped homeowner to the competitor whose
+                starting-at messaging closes the deal.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="group bg-white p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between relative overflow-hidden shadow-[4px_8px_32px_0_rgba(0,0,0,0.08)] ring-1 ring-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:hover:-translate-y-2 hover:shadow-[8px_20px_48px_0_rgba(17,23,31,0.16)] hover:ring-[#C4D520]/40"
+          >
+            <!-- Accent bar sweep -->
+            <span
+              class="pointer-events-none absolute inset-x-0 bottom-0 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+            ></span>
+
+            <!-- Soft glow -->
+            <span
+              class="pointer-events-none absolute -top-16 -right-16 w-40 h-40 rounded-full bg-[#C4D520]/20 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            ></span>
+
+            <div
+              class="relative flex items-center justify-between mb-3 md:mb-4 lg:mb-6"
+            >
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 rounded-xl md:rounded-[14px] lg:rounded-2xl bg-[#C4D520] text-[#11171F] anton font-normal leading-[130%] text-2xl md:text-[28px] lg:text-[30px] xl:text-[32px] flex items-center justify-center transition-all duration-300 group-hover:bg-[#11171F] group-hover:text-[#C4D520] motion-safe:group-hover:scale-105 motion-safe:group-hover:-rotate-3"
+              >
+                3
+              </div>
+              <div
+                class="w-8 h-8 md:w-10 md:h-10 lg:w-9 lg:h-9 xl:w-12 xl:h-12 rounded-full bg-[#FFDED7] flex items-center justify-center transition-transform duration-300 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-12"
+              >
+                <img
+                  src="assets/images/plumbing-red-exclaimation.svg"
+                  alt="exclaimation"
+                  class="w-4 h-4 md:w-5 md:h-5 lg:w-4.5 lg:h-4.5 xl:w-6 xl:h-6 object-contain"
+                />
+              </div>
+            </div>
+
+            <div class="relative flex flex-col grow">
+              <h3
+                class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize mb-3 xl:mb-4 transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+              >
+                License And Bonding Info Buried In The Footer
+              </h3>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] transition-colors duration-300 group-hover:text-[#11171F]"
+              >
+                State roofing licenses, insurance, bonding, workers comp - these
+                go in the header. Homeowners burned by fly-by-night crews look
+                for these first and call the next roofer if they are not
+                visible.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="group bg-white p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between relative overflow-hidden shadow-[4px_8px_32px_0_rgba(0,0,0,0.08)] ring-1 ring-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:hover:-translate-y-2 hover:shadow-[8px_20px_48px_0_rgba(17,23,31,0.16)] hover:ring-[#C4D520]/40"
+          >
+            <!-- Accent bar sweep -->
+            <span
+              class="pointer-events-none absolute inset-x-0 bottom-0 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+            ></span>
+
+            <!-- Soft glow -->
+            <span
+              class="pointer-events-none absolute -top-16 -right-16 w-40 h-40 rounded-full bg-[#C4D520]/20 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            ></span>
+
+            <div
+              class="relative flex items-center justify-between mb-3 md:mb-4 lg:mb-6"
+            >
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 rounded-xl md:rounded-[14px] lg:rounded-2xl bg-[#C4D520] text-[#11171F] anton font-normal leading-[130%] text-2xl md:text-[28px] lg:text-[30px] xl:text-[32px] flex items-center justify-center transition-all duration-300 group-hover:bg-[#11171F] group-hover:text-[#C4D520] motion-safe:group-hover:scale-105 motion-safe:group-hover:-rotate-3"
+              >
+                4
+              </div>
+              <div
+                class="w-8 h-8 md:w-10 md:h-10 lg:w-9 lg:h-9 xl:w-12 xl:h-12 rounded-full bg-[#FFDED7] flex items-center justify-center transition-transform duration-300 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-12"
+              >
+                <img
+                  src="assets/images/plumbing-red-exclaimation.svg"
+                  alt="exclaimation"
+                  class="w-4 h-4 md:w-5 md:h-5 lg:w-4.5 lg:h-4.5 xl:w-6 xl:h-6 object-contain"
+                />
+              </div>
+            </div>
+
+            <div class="relative flex flex-col grow">
+              <h3
+                class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize mb-3 xl:mb-4 transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+              >
+                Generic Site That Looks Like A 2010 Contractor Template
+              </h3>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] transition-colors duration-300 group-hover:text-[#11171F]"
+              >
+                Most independent roofing sites use the same template - shingle
+                hero, family-business tagline, three stock photos. Homeowners
+                distrust this aesthetic because storm chasers use it too.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="group bg-white p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between relative overflow-hidden shadow-[4px_8px_32px_0_rgba(0,0,0,0.08)] ring-1 ring-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:hover:-translate-y-2 hover:shadow-[8px_20px_48px_0_rgba(17,23,31,0.16)] hover:ring-[#C4D520]/40"
+          >
+            <!-- Accent bar sweep -->
+            <span
+              class="pointer-events-none absolute inset-x-0 bottom-0 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+            ></span>
+
+            <!-- Soft glow -->
+            <span
+              class="pointer-events-none absolute -top-16 -right-16 w-40 h-40 rounded-full bg-[#C4D520]/20 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            ></span>
+
+            <div
+              class="relative flex items-center justify-between mb-3 md:mb-4 lg:mb-6"
+            >
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 rounded-xl md:rounded-[14px] lg:rounded-2xl bg-[#C4D520] text-[#11171F] anton font-normal leading-[130%] text-2xl md:text-[28px] lg:text-[30px] xl:text-[32px] flex items-center justify-center transition-all duration-300 group-hover:bg-[#11171F] group-hover:text-[#C4D520] motion-safe:group-hover:scale-105 motion-safe:group-hover:-rotate-3"
+              >
+                5
+              </div>
+              <div
+                class="w-8 h-8 md:w-10 md:h-10 lg:w-9 lg:h-9 xl:w-12 xl:h-12 rounded-full bg-[#FFDED7] flex items-center justify-center transition-transform duration-300 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-12"
+              >
+                <img
+                  src="assets/images/plumbing-red-exclaimation.svg"
+                  alt="exclaimation"
+                  class="w-4 h-4 md:w-5 md:h-5 lg:w-4.5 lg:h-4.5 xl:w-6 xl:h-6 object-contain"
+                />
+              </div>
+            </div>
+
+            <div class="relative flex flex-col grow">
+              <h3
+                class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize mb-3 xl:mb-4 transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+              >
+                No Manufacturer Certifications Shown
+              </h3>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] transition-colors duration-300 group-hover:text-[#11171F]"
+              >
+                GAF Master Elite, Owens Corning Platinum Preferred, CertainTeed
+                SELECT - these unlock enhanced warranty terms storm chasers
+                cannot offer, and most independent sites do not display them at
+                all.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="group bg-white p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between relative overflow-hidden shadow-[4px_8px_32px_0_rgba(0,0,0,0.08)] ring-1 ring-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:hover:-translate-y-2 hover:shadow-[8px_20px_48px_0_rgba(17,23,31,0.16)] hover:ring-[#C4D520]/40"
+          >
+            <!-- Accent bar sweep -->
+            <span
+              class="pointer-events-none absolute inset-x-0 bottom-0 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+            ></span>
+
+            <!-- Soft glow -->
+            <span
+              class="pointer-events-none absolute -top-16 -right-16 w-40 h-40 rounded-full bg-[#C4D520]/20 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            ></span>
+
+            <div
+              class="relative flex items-center justify-between mb-3 md:mb-4 lg:mb-6"
+            >
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 rounded-xl md:rounded-[14px] lg:rounded-2xl bg-[#C4D520] text-[#11171F] anton font-normal leading-[130%] text-2xl md:text-[28px] lg:text-[30px] xl:text-[32px] flex items-center justify-center transition-all duration-300 group-hover:bg-[#11171F] group-hover:text-[#C4D520] motion-safe:group-hover:scale-105 motion-safe:group-hover:-rotate-3"
+              >
+                6
+              </div>
+              <div
+                class="w-8 h-8 md:w-10 md:h-10 lg:w-9 lg:h-9 xl:w-12 xl:h-12 rounded-full bg-[#FFDED7] flex items-center justify-center transition-transform duration-300 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-12"
+              >
+                <img
+                  src="assets/images/plumbing-red-exclaimation.svg"
+                  alt="exclaimation"
+                  class="w-4 h-4 md:w-5 md:h-5 lg:w-4.5 lg:h-4.5 xl:w-6 xl:h-6 object-contain"
+                />
+              </div>
+            </div>
+
+            <div class="relative flex flex-col grow">
+              <h3
+                class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize mb-3 xl:mb-4 transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+              >
+                No Service Area Map - Wasting Estimates
+              </h3>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] transition-colors duration-300 group-hover:text-[#11171F]"
+              >
+                Specific cities, ZIPs, and a map filter out-of-zone leads and
+                prevent the dispatch-to-decline waste of estimating jobs you
+                cannot profitably take.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div
+            class="group bg-white p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between relative overflow-hidden shadow-[4px_8px_32px_0_rgba(0,0,0,0.08)] ring-1 ring-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:hover:-translate-y-2 hover:shadow-[8px_20px_48px_0_rgba(17,23,31,0.16)] hover:ring-[#C4D520]/40"
+          >
+            <!-- Accent bar sweep -->
+            <span
+              class="pointer-events-none absolute inset-x-0 bottom-0 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+            ></span>
+
+            <!-- Soft glow -->
+            <span
+              class="pointer-events-none absolute -top-16 -right-16 w-40 h-40 rounded-full bg-[#C4D520]/20 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            ></span>
+
+            <div
+              class="relative flex items-center justify-between mb-3 md:mb-4 lg:mb-6"
+            >
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 rounded-xl md:rounded-[14px] lg:rounded-2xl bg-[#C4D520] text-[#11171F] anton font-normal leading-[130%] text-2xl md:text-[28px] lg:text-[30px] xl:text-[32px] flex items-center justify-center transition-all duration-300 group-hover:bg-[#11171F] group-hover:text-[#C4D520] motion-safe:group-hover:scale-105 motion-safe:group-hover:-rotate-3"
+              >
+                7
+              </div>
+              <div
+                class="w-8 h-8 md:w-10 md:h-10 lg:w-9 lg:h-9 xl:w-12 xl:h-12 rounded-full bg-[#FFDED7] flex items-center justify-center transition-transform duration-300 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-12"
+              >
+                <img
+                  src="assets/images/plumbing-red-exclaimation.svg"
+                  alt="exclaimation"
+                  class="w-4 h-4 md:w-5 md:h-5 lg:w-4.5 lg:h-4.5 xl:w-6 xl:h-6 object-contain"
+                />
+              </div>
+            </div>
+
+            <div class="relative flex flex-col grow">
+              <h3
+                class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize mb-3 xl:mb-4 transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+              >
+                Quote Form Takes 11 Fields And 3 Minutes
+              </h3>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] transition-colors duration-300 group-hover:text-[#11171F]"
+              >
+                Smart forms collect address, roof type, age estimate, and
+                current issue in 5 fields max - then reuse Inco AccuLynx,
+                JobNimbus, or Rooflink with proper field mapping.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div
+            class="group bg-white p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between relative overflow-hidden shadow-[4px_8px_32px_0_rgba(0,0,0,0.08)] ring-1 ring-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:hover:-translate-y-2 hover:shadow-[8px_20px_48px_0_rgba(17,23,31,0.16)] hover:ring-[#C4D520]/40"
+          >
+            <!-- Accent bar sweep -->
+            <span
+              class="pointer-events-none absolute inset-x-0 bottom-0 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+            ></span>
+
+            <!-- Soft glow -->
+            <span
+              class="pointer-events-none absolute -top-16 -right-16 w-40 h-40 rounded-full bg-[#C4D520]/20 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            ></span>
+
+            <div
+              class="relative flex items-center justify-between mb-3 md:mb-4 lg:mb-6"
+            >
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 rounded-xl md:rounded-[14px] lg:rounded-2xl bg-[#C4D520] text-[#11171F] anton font-normal leading-[130%] text-2xl md:text-[28px] lg:text-[30px] xl:text-[32px] flex items-center justify-center transition-all duration-300 group-hover:bg-[#11171F] group-hover:text-[#C4D520] motion-safe:group-hover:scale-105 motion-safe:group-hover:-rotate-3"
+              >
+                8
+              </div>
+              <div
+                class="w-8 h-8 md:w-10 md:h-10 lg:w-9 lg:h-9 xl:w-12 xl:h-12 rounded-full bg-[#FFDED7] flex items-center justify-center transition-transform duration-300 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-12"
+              >
+                <img
+                  src="assets/images/plumbing-red-exclaimation.svg"
+                  alt="exclaimation"
+                  class="w-4 h-4 md:w-5 md:h-5 lg:w-4.5 lg:h-4.5 xl:w-6 xl:h-6 object-contain"
+                />
+              </div>
+            </div>
+
+            <div class="relative flex flex-col grow">
+              <h3
+                class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize mb-3 xl:mb-4 transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+              >
+                Material Options Page Missing Entirely
+              </h3>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] transition-colors duration-300 group-hover:text-[#11171F]"
+              >
+                Asphalt vs metal vs tile vs slate - homeowners research material
+                options before requesting a quote. Per-material pages earn the
+                SEO traffic and qualify the inquiry.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div
+            class="group bg-white p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between relative overflow-hidden shadow-[4px_8px_32px_0_rgba(0,0,0,0.08)] ring-1 ring-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:hover:-translate-y-2 hover:shadow-[8px_20px_48px_0_rgba(17,23,31,0.16)] hover:ring-[#C4D520]/40"
+          >
+            <!-- Accent bar sweep -->
+            <span
+              class="pointer-events-none absolute inset-x-0 bottom-0 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+            ></span>
+
+            <!-- Soft glow -->
+            <span
+              class="pointer-events-none absolute -top-16 -right-16 w-40 h-40 rounded-full bg-[#C4D520]/20 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            ></span>
+
+            <div
+              class="relative flex items-center justify-between mb-3 md:mb-4 lg:mb-6"
+            >
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 rounded-xl md:rounded-[14px] lg:rounded-2xl bg-[#C4D520] text-[#11171F] anton font-normal leading-[130%] text-2xl md:text-[28px] lg:text-[30px] xl:text-[32px] flex items-center justify-center transition-all duration-300 group-hover:bg-[#11171F] group-hover:text-[#C4D520] motion-safe:group-hover:scale-105 motion-safe:group-hover:-rotate-3"
+              >
+                9
+              </div>
+              <div
+                class="w-8 h-8 md:w-10 md:h-10 lg:w-9 lg:h-9 xl:w-12 xl:h-12 rounded-full bg-[#FFDED7] flex items-center justify-center transition-transform duration-300 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-12"
+              >
+                <img
+                  src="assets/images/plumbing-red-exclaimation.svg"
+                  alt="exclaimation"
+                  class="w-4 h-4 md:w-5 md:h-5 lg:w-4.5 lg:h-4.5 xl:w-6 xl:h-6 object-contain"
+                />
+              </div>
+            </div>
+
+            <div class="relative flex flex-col grow">
+              <h3
+                class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize mb-3 xl:mb-4 transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+              >
+                No Storm Response Messaging After Major Weather
+              </h3>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] transition-colors duration-300 group-hover:text-[#11171F]"
+              >
+                Hail and high-wind events drive 60% of annual roofing leads in
+                storm-prone metros. Sites without storm-response banners lose
+                the surge to the competitor whose homepage shifts mode
+                automatically.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What You'd Pay Separately vs What You Pay Us -->
+    <section class="relative w-full py-12 md:py-16 lg:py-20 xl:py-24">
+      <!-- Background Image with Overlay -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="assets/images/plumbing-price-package-banner.webp"
+          alt="Plumber background"
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <!-- Grid lines (background layer) -->
+      <div class="pointer-events-none absolute inset-0 z-0" aria-hidden="true">
+        <div class="container relative mx-auto flex h-full justify-between">
+          <span class="h-full w-px bg-[#ffffff] opacity-[0.12]"></span>
+          <span class="h-full w-px bg-[#ffffff] opacity-[0.12]"></span>
+          <span class="h-full w-px bg-[#ffffff] opacity-[0.12]"></span>
+          <span class="h-full w-px bg-[#ffffff] opacity-[0.12]"></span>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Main Grid Container -->
+        <div
+          class="relative z-10 grid grid-cols-1 xl:grid-cols-12 gap-6 md:gap-8 lg:gap-10 xl:gap-16"
+        >
+          <!-- Left Column: Title and Description -->
+          <div class="xl:col-span-5">
+            <div
+              class="flex flex-col text-center items-center max-w-248 mx-auto xl:mx-0 xl:text-start xl:items-start xl:justify-start xl:sticky xl:top-20"
+            >
+              <div
+                class="inline-flex items-center self-center xl:self-start px-3 py-2 rounded-full bg-[#C4D520] text-[#11171F] anton text-x md:text-base lg:text-lg xl:text-xl font-normal leading-none uppercase mb-3 lg:mb-4.5 xl:mb-6"
+              >
+                The Real Problems
+              </div>
+              <h2
+                class="anton text-white text-2xl md:text-[32px] lg:text-[48px] xl:text-[56px] font-normal leading-[120%] mb-3 lg:mb-4.5 xl:mb-6"
+              >
+                What You'd Pay Separately vs What You Pay Us
+              </h2>
+              <p
+                class="farro text-white text-xs md:text-sm lg:text-base font-normal leading-[150%]"
+              >
+                Six separate services from six providers, or one package, one
+                team, one fixed price. Every deliverable built specifically for
+                how plumbers clients research and buy.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column: Stacked Services & Pricing Grid/List -->
+          <div class="xl:col-span-7 flex flex-col gap-1 w-full">
+            <!-- Item 1 -->
+            <div
+              class="group relative overflow-hidden cursor-pointer bg-[rgba(20,73,71,0.32)] backdrop-blur-3xl p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl grid grid-cols-[auto_1fr_auto] items-stretch gap-3 md:gap-4 ring-1 ring-white/0 shadow-none transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-[rgba(20,73,71,0.55)] hover:ring-white/20 hover:shadow-[0_16px_40px_-12px_rgba(0,0,0,0.45)] motion-safe:hover:translate-x-1.5"
+            >
+              <!-- Lime accent bar (grows from center) -->
+              <span
+                class="pointer-events-none absolute left-0 inset-y-4 w-1 rounded-r-full bg-[#C4D520] origin-center scale-y-0 transition-transform duration-500 ease-out group-hover:scale-y-100"
+              ></span>
+
+              <!-- Sheen sweep -->
+              <span
+                class="pointer-events-none absolute inset-y-0 -left-1/2 w-1/2 -skew-x-12 bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full opacity-0 transition-all duration-1000 ease-out group-hover:translate-x-[300%] group-hover:opacity-100"
+              ></span>
+
+              <!-- Icon Column -->
+              <div
+                class="relative pr-4 border-r-2 border-white/16 transition-colors duration-300 group-hover:border-[#C4D520]/60"
+              >
+                <img
+                  src="assets/images/plumbing-pen-nib.svg"
+                  alt="Logo icon"
+                  class="w-6 h-6 md:w-8.5 md:h-8.5 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain transition-transform duration-500 ease-out motion-safe:group-hover:scale-110 motion-safe:group-hover:-rotate-6"
+                />
+              </div>
+
+              <!-- Content Column -->
+              <div class="relative min-w-0 flex flex-col justify-start">
+                <h4
+                  class="anton text-white text-base md:text-xl font-normal leading-none mb-2.5 md:mb-3"
+                >
+                  Logo + Brand Identity
+                </h4>
+                <p
+                  class="farro text-white text-xs md:text-sm font-normal leading-[130%] max-w-119 transition-colors duration-300 group-hover:text-white"
+                >
+                  Logo, palette, typography, brand kit. Trade-professional
+                  aesthetic — confident, reliable, not chain knockoff.
+                </p>
+              </div>
+
+              <!-- Price Column -->
+              <div
+                class="relative anton text-white text-base md:text-xl font-normal leading-none flex items-start justify-end transition-all duration-300 group-hover:text-[#C4D520] motion-safe:group-hover:translate-x-0.5"
+              >
+                $400+
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="group relative overflow-hidden cursor-pointer bg-[rgba(20,73,71,0.32)] backdrop-blur-3xl p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl grid grid-cols-[auto_1fr_auto] items-stretch gap-3 md:gap-4 ring-1 ring-white/0 shadow-none transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-[rgba(20,73,71,0.55)] hover:ring-white/20 hover:shadow-[0_16px_40px_-12px_rgba(0,0,0,0.45)] motion-safe:hover:translate-x-1.5"
+            >
+              <!-- Lime accent bar (grows from center) -->
+              <span
+                class="pointer-events-none absolute left-0 inset-y-4 w-1 rounded-r-full bg-[#C4D520] origin-center scale-y-0 transition-transform duration-500 ease-out group-hover:scale-y-100"
+              ></span>
+
+              <!-- Sheen sweep -->
+              <span
+                class="pointer-events-none absolute inset-y-0 -left-1/2 w-1/2 -skew-x-12 bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full opacity-0 transition-all duration-1000 ease-out group-hover:translate-x-[300%] group-hover:opacity-100"
+              ></span>
+
+              <!-- Icon Column -->
+              <div
+                class="relative pr-4 border-r-2 border-white/16 transition-colors duration-300 group-hover:border-[#C4D520]/60"
+              >
+                <img
+                  src="assets/images/plumbing-site-alt.svg"
+                  alt="Logo icon"
+                  class="w-6 h-6 md:w-8.5 md:h-8.5 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain transition-transform duration-500 ease-out motion-safe:group-hover:scale-110 motion-safe:group-hover:-rotate-6"
+                />
+              </div>
+
+              <!-- Content Column -->
+              <div class="relative min-w-0 flex flex-col justify-start">
+                <h4
+                  class="anton text-white text-base md:text-xl font-normal leading-none mb-2.5 md:mb-3"
+                >
+                  Custom 7-Page Plumbing Website
+                </h4>
+                <p
+                  class="farro text-white text-xs md:text-sm font-normal leading-[130%] max-w-119 transition-colors duration-300 group-hover:text-white"
+                >
+                  Home, Services with finder, Emergency, About, Financing,
+                  Reviews, Contact. Mobile-first, sub-2s load.
+                </p>
+              </div>
+
+              <!-- Price Column -->
+              <div
+                class="relative anton text-white text-base md:text-xl font-normal leading-none flex items-start justify-end transition-all duration-300 group-hover:text-[#C4D520] motion-safe:group-hover:translate-x-0.5"
+              >
+                $1,800+
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div
+              class="group relative overflow-hidden cursor-pointer bg-[rgba(20,73,71,0.32)] backdrop-blur-3xl p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl grid grid-cols-[auto_1fr_auto] items-stretch gap-3 md:gap-4 ring-1 ring-white/0 shadow-none transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-[rgba(20,73,71,0.55)] hover:ring-white/20 hover:shadow-[0_16px_40px_-12px_rgba(0,0,0,0.45)] motion-safe:hover:translate-x-1.5"
+            >
+              <!-- Lime accent bar (grows from center) -->
+              <span
+                class="pointer-events-none absolute left-0 inset-y-4 w-1 rounded-r-full bg-[#C4D520] origin-center scale-y-0 transition-transform duration-500 ease-out group-hover:scale-y-100"
+              ></span>
+
+              <!-- Sheen sweep -->
+              <span
+                class="pointer-events-none absolute inset-y-0 -left-1/2 w-1/2 -skew-x-12 bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full opacity-0 transition-all duration-1000 ease-out group-hover:translate-x-[300%] group-hover:opacity-100"
+              ></span>
+
+              <!-- Icon Column -->
+              <div
+                class="relative pr-4 border-r-2 border-white/16 transition-colors duration-300 group-hover:border-[#C4D520]/60"
+              >
+                <img
+                  src="assets/images/plumbing-discover-icon.svg"
+                  alt="Logo icon"
+                  class="w-6 h-6 md:w-8.5 md:h-8.5 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain transition-transform duration-500 ease-out motion-safe:group-hover:scale-110 motion-safe:group-hover:-rotate-6"
+                />
+              </div>
+
+              <!-- Content Column -->
+              <div class="relative min-w-0 flex flex-col justify-start">
+                <h4
+                  class="anton text-white text-base md:text-xl font-normal leading-none mb-2.5 md:mb-3"
+                >
+                  SEO Content With Real Keyword Research
+                </h4>
+                <p
+                  class="farro text-white text-xs md:text-sm font-normal leading-[130%] max-w-119 transition-colors duration-300 group-hover:text-white"
+                >
+                  Page copy targeting 'plumber [city],' 'drain cleaning
+                  [neighborhood],' symptom searches, and service-specific terms.
+                </p>
+              </div>
+
+              <!-- Price Column -->
+              <div
+                class="relative anton text-white text-base md:text-xl font-normal leading-none flex items-start justify-end transition-all duration-300 group-hover:text-[#C4D520] motion-safe:group-hover:translate-x-0.5"
+              >
+                $800+
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div
+              class="group relative overflow-hidden cursor-pointer bg-[rgba(20,73,71,0.32)] backdrop-blur-3xl p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl grid grid-cols-[auto_1fr_auto] items-stretch gap-3 md:gap-4 ring-1 ring-white/0 shadow-none transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-[rgba(20,73,71,0.55)] hover:ring-white/20 hover:shadow-[0_16px_40px_-12px_rgba(0,0,0,0.45)] motion-safe:hover:translate-x-1.5"
+            >
+              <!-- Lime accent bar (grows from center) -->
+              <span
+                class="pointer-events-none absolute left-0 inset-y-4 w-1 rounded-r-full bg-[#C4D520] origin-center scale-y-0 transition-transform duration-500 ease-out group-hover:scale-y-100"
+              ></span>
+
+              <!-- Sheen sweep -->
+              <span
+                class="pointer-events-none absolute inset-y-0 -left-1/2 w-1/2 -skew-x-12 bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full opacity-0 transition-all duration-1000 ease-out group-hover:translate-x-[300%] group-hover:opacity-100"
+              ></span>
+
+              <!-- Icon Column -->
+              <div
+                class="relative pr-4 border-r-2 border-white/16 transition-colors duration-300 group-hover:border-[#C4D520]/60"
+              >
+                <img
+                  src="assets/images/plumbing-settings.svg"
+                  alt="Logo icon"
+                  class="w-6 h-6 md:w-8.5 md:h-8.5 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain transition-transform duration-500 ease-out motion-safe:group-hover:scale-110 motion-safe:group-hover:-rotate-6"
+                />
+              </div>
+
+              <!-- Content Column -->
+              <div class="relative min-w-0 flex flex-col justify-start">
+                <h4
+                  class="anton text-white text-base md:text-xl font-normal leading-none mb-2.5 md:mb-3"
+                >
+                  Technical On-Page SEO Setup
+                </h4>
+                <p
+                  class="farro text-white text-xs md:text-sm font-normal leading-[130%] max-w-119 transition-colors duration-300 group-hover:text-white"
+                >
+                  Plumber and LocalBusiness schema, meta titles per service,
+                  internal linking, sitemap, Search Console.
+                </p>
+              </div>
+
+              <!-- Price Column -->
+              <div
+                class="relative anton text-white text-base md:text-xl font-normal leading-none flex items-start justify-end transition-all duration-300 group-hover:text-[#C4D520] motion-safe:group-hover:translate-x-0.5"
+              >
+                $500+
+              </div>
+            </div>
+            <!-- Item 5 -->
+            <div
+              class="group relative overflow-hidden cursor-pointer bg-[rgba(20,73,71,0.32)] backdrop-blur-3xl p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl grid grid-cols-[auto_1fr_auto] items-stretch gap-3 md:gap-4 ring-1 ring-white/0 shadow-none transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-[rgba(20,73,71,0.55)] hover:ring-white/20 hover:shadow-[0_16px_40px_-12px_rgba(0,0,0,0.45)] motion-safe:hover:translate-x-1.5"
+            >
+              <!-- Lime accent bar (grows from center) -->
+              <span
+                class="pointer-events-none absolute left-0 inset-y-4 w-1 rounded-r-full bg-[#C4D520] origin-center scale-y-0 transition-transform duration-500 ease-out group-hover:scale-y-100"
+              ></span>
+
+              <!-- Sheen sweep -->
+              <span
+                class="pointer-events-none absolute inset-y-0 -left-1/2 w-1/2 -skew-x-12 bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full opacity-0 transition-all duration-1000 ease-out group-hover:translate-x-[300%] group-hover:opacity-100"
+              ></span>
+
+              <!-- Icon Column -->
+              <div
+                class="relative pr-4 border-r-2 border-white/16 transition-colors duration-300 group-hover:border-[#C4D520]/60"
+              >
+                <img
+                  src="assets/images/plumbning-google.svg"
+                  alt="Logo icon"
+                  class="w-6 h-6 md:w-8.5 md:h-8.5 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain transition-transform duration-500 ease-out motion-safe:group-hover:scale-110 motion-safe:group-hover:-rotate-6"
+                />
+              </div>
+
+              <!-- Content Column -->
+              <div class="relative min-w-0 flex flex-col justify-start">
+                <h4
+                  class="anton text-white text-base md:text-xl font-normal leading-none mb-2.5 md:mb-3"
+                >
+                  Google Business Profile Optimization
+                </h4>
+                <p
+                  class="farro text-white text-xs md:text-sm font-normal leading-[130%] max-w-119 transition-colors duration-300 group-hover:text-white"
+                >
+                  Categories, services, photos, NAP cleanup. The #1 source for
+                  'plumber near me' searches.
+                </p>
+              </div>
+
+              <!-- Price Column -->
+              <div
+                class="relative anton text-white text-base md:text-xl font-normal leading-none flex items-start justify-end transition-all duration-300 group-hover:text-[#C4D520] motion-safe:group-hover:translate-x-0.5"
+              >
+                $400+
+              </div>
+            </div>
+            <!-- Item 6 -->
+            <div
+              class="group relative overflow-hidden cursor-pointer bg-[rgba(20,73,71,0.32)] backdrop-blur-3xl p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl grid grid-cols-[auto_1fr_auto] items-stretch gap-3 md:gap-4 ring-1 ring-white/0 shadow-none transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-[rgba(20,73,71,0.55)] hover:ring-white/20 hover:shadow-[0_16px_40px_-12px_rgba(0,0,0,0.45)] motion-safe:hover:translate-x-1.5"
+            >
+              <!-- Lime accent bar (grows from center) -->
+              <span
+                class="pointer-events-none absolute left-0 inset-y-4 w-1 rounded-r-full bg-[#C4D520] origin-center scale-y-0 transition-transform duration-500 ease-out group-hover:scale-y-100"
+              ></span>
+
+              <!-- Sheen sweep -->
+              <span
+                class="pointer-events-none absolute inset-y-0 -left-1/2 w-1/2 -skew-x-12 bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full opacity-0 transition-all duration-1000 ease-out group-hover:translate-x-[300%] group-hover:opacity-100"
+              ></span>
+
+              <!-- Icon Column -->
+              <div
+                class="relative pr-4 border-r-2 border-white/16 transition-colors duration-300 group-hover:border-[#C4D520]/60"
+              >
+                <img
+                  src="assets/images/plumbing-support.svg"
+                  alt="Logo icon"
+                  class="w-6 h-6 md:w-8.5 md:h-8.5 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain transition-transform duration-500 ease-out motion-safe:group-hover:scale-110 motion-safe:group-hover:-rotate-6"
+                />
+              </div>
+
+              <!-- Content Column -->
+              <div class="relative min-w-0 flex flex-col justify-start">
+                <h4
+                  class="anton text-white text-base md:text-xl font-normal leading-none mb-2.5 md:mb-3"
+                >
+                  30 Days Post-Launch Support
+                </h4>
+                <p
+                  class="farro text-white text-xs md:text-sm font-normal leading-[130%] max-w-119 transition-colors duration-300 group-hover:text-white"
+                >
+                  Bug fixes, content updates, CMS training, A/B test of primary
+                  lead capture.
+                </p>
+              </div>
+
+              <!-- Price Column -->
+              <div
+                class="relative anton text-white text-base md:text-xl font-normal leading-none flex items-start justify-end transition-all duration-300 group-hover:text-[#C4D520] motion-safe:group-hover:translate-x-0.5"
+              >
+                $300+
+              </div>
+            </div>
+            <!-- pay seperately -->
+            <div
+              class="group relative overflow-hidden cursor-default bg-[#C42904] p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl grid grid-cols-[auto_1fr_auto] items-stretch gap-3 md:gap-4 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-[#D92F06] hover:shadow-[0_16px_40px_-10px_rgba(196,41,4,0.55)] motion-safe:hover:-translate-y-0.5"
+            >
+              <span
+                class="pointer-events-none absolute inset-y-0 -left-1/2 w-1/2 -skew-x-12 bg-linear-to-r from-transparent via-white/15 to-transparent -translate-x-full opacity-0 transition-all duration-1000 ease-out group-hover:translate-x-[300%] group-hover:opacity-100"
+              ></span>
+
+              <div
+                class="relative pr-4 border-r-2 border-white/16 flex items-center transition-colors duration-300 group-hover:border-white/40"
+              >
+                <img
+                  src="assets/images/plumbing-total-plus.svg"
+                  alt="Logo icon"
+                  class="w-6 h-6 md:w-8.5 md:h-8.5 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain transition-transform duration-500 motion-safe:group-hover:rotate-90"
+                />
+              </div>
+
+              <div class="relative min-w-0 flex flex-col justify-center">
+                <h4
+                  class="anton text-white text-base md:text-xl font-normal leading-none"
+                >
+                  Total Elsewhere
+                </h4>
+              </div>
+
+              <div
+                class="relative anton text-white text-base md:text-xl font-normal leading-none flex items-center justify-end"
+              >
+                $4,200+
+              </div>
+            </div>
+            <!--Pixxen Plumbing Pack -->
+            <div
+              class="group relative overflow-hidden cursor-pointer bg-[#C4D520] p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl grid grid-cols-[auto_1fr_auto] items-stretch gap-3 md:gap-4 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-[#D2E325] motion-safe:hover:-translate-y-1.5 motion-safe:hover:scale-[1.015]"
+            >
+              <span
+                class="pointer-events-none absolute inset-y-0 -left-1/2 w-1/2 -skew-x-12 bg-linear-to-r from-transparent via-white/40 to-transparent -translate-x-full opacity-0 transition-all duration-1000 ease-out group-hover:translate-x-[300%] group-hover:opacity-100"
+              ></span>
+
+              <div
+                class="relative pr-4 border-r-2 border-[#184241]/16 flex items-center transition-colors duration-300 group-hover:border-[#184241]/40"
+              >
+                <img
+                  src="assets/images/plumbing-pixxen-p.svg"
+                  alt="Logo icon"
+                  class="w-6 h-6 md:w-8.5 md:h-8.5 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain transition-transform duration-500 motion-safe:group-hover:scale-110 motion-safe:group-hover:-rotate-6"
+                />
+              </div>
+
+              <div class="relative min-w-0 flex flex-col justify-center">
+                <h4
+                  class="anton text-[#11171F] text-2xl md:text-[32px] lg:text-[28px] xl:text-[32px] font-normal leading-[130%]"
+                >
+                  Pixxen Plumbing Pack
+                </h4>
+              </div>
+
+              <div
+                class="relative anton text-[#11171F] text-2xl md:text-[32px] lg:text-[28px] xl:text-[32px] font-normal leading-[130%] flex items-center justify-end transition-transform duration-300 motion-safe:group-hover:scale-110 origin-right"
+              >
+                $999
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pay as the Work Is Delivered -->
+    <section
+      class="bg-[radial-gradient(100%_100%_at_50%_100%,#C4D520_0%,#184241_37.48%)] py-12 md:py-16 lg:py-20 xl:py-24"
+    >
+      <div class="container">
+        <!-- Section Header -->
+        <div class="text-center max-w-248 mx-auto mb-6 md:mb-10 lg:mb-12">
+          <div
+            class="inline-flex items-center self-center xl:self-start px-3 py-2 rounded-full border border-white text-white anton text-x md:text-base lg:text-lg xl:text-xl font-normal leading-none uppercase mb-3 lg:mb-4.5 xl:mb-6"
+          >
+            Everything included
+          </div>
+          <h2
+            class="anton text-white text-2xl md:text-[32px] lg:text-[48px] xl:text-[56px] font-normal leading-[120%] mb-3 lg:mb-4.5 xl:mb-6"
+          >
+            Pay as the Work Is Delivered
+          </h2>
+          <p
+            class="farro text-white text-xs md:text-sm lg:text-base font-normal leading-[150%]"
+          >
+            Pay in three simple milestones as your project progresses, and
+            review every stage before you make the next payment.
+          </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 lg:gap-6 xl:gap-8 items-stretch"
+        >
+          <!-- Card 1:  -->
+          <div
+            class="group h-full flex flex-col rounded-3xl md:rounded-4xl overflow-hidden cursor-pointer transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:shadow-[0_20px_40px_-12px_rgba(17,23,31,0.22)] motion-safe:hover:-translate-y-1.5"
+          >
+            <!-- Upper Card -->
+            <div
+              class="plumbing-payment-upper-crd bg-white flex-1 p-4 md:p-6 xl:p-12"
+            >
+              <div
+                class="inline-flex items-center self-center xl:self-start px-3 py-2 rounded-full bg-[#C4D520] text-[#11171F] anton text-xs md:text-base lg:text-lg xl:text-xl font-normal leading-none uppercase mb-3 md:mb-3.5 lg:mb-4 xl:mb-7.5 transition-colors duration-300 group-hover:bg-[#11171F] group-hover:text-[#C4D520]"
+              >
+                Start
+              </div>
+              <h3
+                class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize"
+              >
+                Brand Foundation
+              </h3>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] mt-2.5 md:mt-3 lg:mt-4"
+              >
+                We start by creating your logo, visual identity, and design
+                system to create an unforgettable first impression.
+              </p>
+            </div>
+
+            <!-- Lower Card -->
+            <div
+              class="plumbing-payment-lower-crd bg-white p-4 md:p-6 xl:p-12 pt-0! relative"
+            >
+              <div
+                class="w-25 h-0.5 bg-[#C4D520] mb-3 md:mb-4 xl:mb-6 transition-all duration-500 ease-out group-hover:w-40"
+              ></div>
+
+              <div
+                class="anton text-[#171E27] text-lg lg:text-xl xl:text-2xl font-normal leading-[120%] capitalize"
+              >
+                Kickoff
+              </div>
+              <div
+                class="anton text-[#171E27] text-[40px] md:text-[56px] xl:text-[96px] font-normal leading-[120%] my-2 lg:my-3 origin-left transition-all duration-500 ease-out group-hover:text-[#C4D520] motion-safe:group-hover:scale-105"
+              >
+                50%
+              </div>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%]"
+              >
+                Due at Project Start
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2:  -->
+          <div
+            class="group h-full flex flex-col rounded-3xl md:rounded-4xl overflow-hidden cursor-pointer transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:shadow-[0_20px_40px_-12px_rgba(17,23,31,0.22)] motion-safe:hover:-translate-y-1.5"
+          >
+            <!-- Upper Card -->
+            <div
+              class="plumbing-payment-upper-crd bg-white flex-1 p-4 md:p-6 xl:p-12"
+            >
+              <div
+                class="inline-flex items-center self-center xl:self-start px-3 py-2 rounded-full bg-[#C4D520] text-[#11171F] anton text-xs md:text-base lg:text-lg xl:text-xl font-normal leading-none uppercase mb-3 md:mb-3.5 lg:mb-4 xl:mb-7.5 transition-colors duration-300 group-hover:bg-[#11171F] group-hover:text-[#C4D520]"
+              >
+                Midway
+              </div>
+              <h3
+                class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize"
+              >
+                Design & Development
+              </h3>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] mt-2.5 md:mt-3 lg:mt-4"
+              >
+                Once your site is fully designed and developed, review and
+                approve it. Then sign off on the second milestone.
+              </p>
+            </div>
+
+            <!-- Lower Card -->
+            <div
+              class="plumbing-payment-lower-crd bg-white p-4 md:p-6 xl:p-12 pt-0! relative"
+            >
+              <div
+                class="w-25 h-0.5 bg-[#C4D520] mb-3 md:mb-4 xl:mb-6 transition-all duration-500 ease-out group-hover:w-40"
+              ></div>
+
+              <div
+                class="anton text-[#171E27] text-lg lg:text-xl xl:text-2xl font-normal leading-[120%] capitalize"
+              >
+                Mid-Project
+              </div>
+              <div
+                class="anton text-[#171E27] text-[40px] md:text-[56px] xl:text-[96px] font-normal leading-[120%] my-2 lg:my-3 origin-left transition-all duration-500 ease-out group-hover:text-[#C4D520] motion-safe:group-hover:scale-105"
+              >
+                25%
+              </div>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%]"
+              >
+                Due at Design Approval
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3:  -->
+          <div
+            class="group h-full flex flex-col rounded-3xl md:rounded-4xl overflow-hidden cursor-pointer transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:shadow-[0_20px_40px_-12px_rgba(17,23,31,0.22)] motion-safe:hover:-translate-y-1.5"
+          >
+            <!-- Upper Card -->
+            <div
+              class="plumbing-payment-upper-crd bg-white flex-1 p-4 md:p-6 xl:p-12"
+            >
+              <div
+                class="inline-flex items-center self-center xl:self-start px-3 py-2 rounded-full bg-[#C4D520] text-[#11171F] anton text-xs md:text-base lg:text-lg xl:text-xl font-normal leading-none uppercase mb-3 md:mb-3.5 lg:mb-4 xl:mb-7.5 transition-colors duration-300 group-hover:bg-[#11171F] group-hover:text-[#C4D520]"
+              >
+                Launch
+              </div>
+              <h3
+                class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize"
+              >
+                Launch & Support
+              </h3>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] mt-2.5 md:mt-3 lg:mt-4"
+              >
+                The final payment is due when your finished website goes live.
+                The 30-day post-launch support starts the same day.
+              </p>
+            </div>
+
+            <!-- Lower Card -->
+            <div
+              class="plumbing-payment-lower-crd bg-white p-4 md:p-6 xl:p-12 pt-0! relative"
+            >
+              <div
+                class="w-25 h-0.5 bg-[#C4D520] mb-3 md:mb-4 xl:mb-6 transition-all duration-500 ease-out group-hover:w-40"
+              ></div>
+
+              <div
+                class="anton text-[#171E27] text-lg lg:text-xl xl:text-2xl font-normal leading-[120%] capitalize"
+              >
+                On Completed
+              </div>
+              <div
+                class="anton text-[#171E27] text-[40px] md:text-[56px] xl:text-[96px] font-normal leading-[120%] my-2 lg:my-3 origin-left transition-all duration-500 ease-out group-hover:text-[#C4D520] motion-safe:group-hover:scale-105"
+              >
+                25%
+              </div>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%]"
+              >
+                Due at Launch
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nine Features Plumbing Owners Actually Use (And Most Websites Skip) -->
+    <section class="relative bg-white py-12 md:py-16 lg:py-20 xl:py-24">
+      <div class="container">
+        <!-- Grid lines (background layer) -->
+        <div
+          class="pointer-events-none absolute inset-0 z-0"
+          aria-hidden="true"
+        >
+          <div class="container relative mx-auto flex h-full justify-between">
+            <span class="h-full w-px bg-[#144947] opacity-[0.12]"></span>
+            <span class="h-full w-px bg-[#144947] opacity-[0.12]"></span>
+            <span class="h-full w-px bg-[#144947] opacity-[0.12]"></span>
+            <span class="h-full w-px bg-[#144947] opacity-[0.12]"></span>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center text-center max-w-248 mx-auto mb-6 md:mb-10 lg:mb-12"
+        >
+          <!-- Top Badge -->
+          <div
+            class="inline-flex items-center self-center px-3 py-2 rounded-full bg-[#C4D520] text-[#11171F] anton text-x md:text-base lg:text-lg xl:text-xl font-normal leading-none uppercase mb-3 lg:mb-4.5 xl:mb-6"
+          >
+            Built for plumbers
+          </div>
+
+          <!-- Main Heading -->
+          <h2
+            class="anton text-[#171E27] text-2xl md:text-[32px] lg:text-[48px] xl:text-[56px] font-normal leading-[120%] mb-3 lg:mb-4.5 xl:mb-6"
+          >
+            Nine Features Plumbing Owners Actually Use (And Most Websites Skip)
+          </h2>
+
+          <!-- Subtitle Description -->
+          <p
+            class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%]"
+          >
+            Every feature on this list exists because we've seen it move the
+            needle on booked leads. Nothing here is decoration.
+          </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 w-full px-1.5 sm:px-2"
+        >
+          <!-- Card 1 -->
+          <div
+            class="group bg-white p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between h-full relative overflow-hidden shadow-[4px_8px_32px_0_rgba(0,0,0,0.08)] ring-1 ring-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:hover:-translate-y-2 hover:shadow-[8px_20px_48px_0_rgba(17,23,31,0.16)] hover:ring-[#C4D520]/40"
+          >
+            <!-- Accent bar sweep -->
+            <span
+              class="pointer-events-none absolute inset-x-0 bottom-0 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+            ></span>
+
+            <!-- Soft glow -->
+            <span
+              class="pointer-events-none absolute -top-16 -right-16 w-40 h-40 rounded-full bg-[#C4D520]/20 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            ></span>
+
+            <div
+              class="relative flex items-center justify-between mb-3 md:mb-4 lg:mb-6"
+            >
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 transition-all duration-300 motion-safe:group-hover:scale-105 motion-safe:group-hover:-rotate-3"
+              >
+                <img
+                  src="assets/images/plumbing-247-emergency-call-banner.svg"
+                  alt="plumbing-247-emergency-call-banner"
+                />
+              </div>
+            </div>
+
+            <div class="relative flex flex-col grow">
+              <h3
+                class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize mb-3 xl:mb-4 transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+              >
+                24/7 Emergency Call Banner
+              </h3>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] transition-colors duration-300 group-hover:text-[#11171F]"
+              >
+                Sticky top-of-page banner with emergency phone number,
+                after-hours availability, and average response time. Visible on
+                every page, dominant on mobile.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="group bg-white p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between h-full relative overflow-hidden shadow-[4px_8px_32px_0_rgba(0,0,0,0.08)] ring-1 ring-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:hover:-translate-y-2 hover:shadow-[8px_20px_48px_0_rgba(17,23,31,0.16)] hover:ring-[#C4D520]/40"
+          >
+            <span
+              class="pointer-events-none absolute inset-x-0 bottom-0 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+            ></span>
+            <span
+              class="pointer-events-none absolute -top-16 -right-16 w-40 h-40 rounded-full bg-[#C4D520]/20 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            ></span>
+
+            <div
+              class="relative flex items-center justify-between mb-3 md:mb-4 lg:mb-6"
+            >
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 transition-all duration-300 motion-safe:group-hover:scale-105 motion-safe:group-hover:-rotate-3"
+              >
+                <img
+                  src="assets/images/plumbing-symptom-search-service-pages.svg"
+                  alt="plumbing-symptom-search-service-pages"
+                />
+              </div>
+            </div>
+
+            <div class="relative flex flex-col grow">
+              <h3
+                class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize mb-3 xl:mb-4 transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+              >
+                Symptom-Search Service Pages
+              </h3>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] transition-colors duration-300 group-hover:text-[#11171F]"
+              >
+                Toilet making gurgling sound, water bill suddenly doubled, water
+                heater banging — symptom pages that rank for the exact queries
+                homeowners Google.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="group bg-white p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between h-full relative overflow-hidden shadow-[4px_8px_32px_0_rgba(0,0,0,0.08)] ring-1 ring-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:hover:-translate-y-2 hover:shadow-[8px_20px_48px_0_rgba(17,23,31,0.16)] hover:ring-[#C4D520]/40"
+          >
+            <span
+              class="pointer-events-none absolute inset-x-0 bottom-0 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+            ></span>
+            <span
+              class="pointer-events-none absolute -top-16 -right-16 w-40 h-40 rounded-full bg-[#C4D520]/20 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            ></span>
+
+            <div
+              class="relative flex items-center justify-between mb-3 md:mb-4 lg:mb-6"
+            >
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 transition-all duration-300 motion-safe:group-hover:scale-105 motion-safe:group-hover:-rotate-3"
+              >
+                <img
+                  src="assets/images/plumbing-transparent-service-pricing.svg"
+                  alt="plumbing-transparent-service-pricing"
+                />
+              </div>
+            </div>
+
+            <div class="relative flex flex-col grow">
+              <h3
+                class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize mb-3 xl:mb-4 transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+              >
+                Transparent service pricing
+              </h3>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] transition-colors duration-300 group-hover:text-[#11171F]"
+              >
+                Published ranges for common services — drain snake, hydro-
+                jetting, water heater flush, leak detection. Filters price
+                shoppers and qualifies serious calls.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="group bg-white p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between h-full relative overflow-hidden shadow-[4px_8px_32px_0_rgba(0,0,0,0.08)] ring-1 ring-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:hover:-translate-y-2 hover:shadow-[8px_20px_48px_0_rgba(17,23,31,0.16)] hover:ring-[#C4D520]/40"
+          >
+            <span
+              class="pointer-events-none absolute inset-x-0 bottom-0 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+            ></span>
+            <span
+              class="pointer-events-none absolute -top-16 -right-16 w-40 h-40 rounded-full bg-[#C4D520]/20 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            ></span>
+
+            <div
+              class="relative flex items-center justify-between mb-3 md:mb-4 lg:mb-6"
+            >
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 transition-all duration-300 motion-safe:group-hover:scale-105 motion-safe:group-hover:-rotate-3"
+              >
+                <img
+                  src="assets/images/plumbing-license-and-insurance-in-the-header.svg"
+                  alt="plumbing-license-and-insurance-in-the-header"
+                />
+              </div>
+            </div>
+
+            <div class="relative flex flex-col grow">
+              <h3
+                class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize mb-3 xl:mb-4 transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+              >
+                License And Insurance In The Header
+              </h3>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] transition-colors duration-300 group-hover:text-[#11171F]"
+              >
+                State plumbing license number, liability insurance carrier,
+                workers comp status, bonding amount. Trust signals visible where
+                prospects look.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="group bg-white p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between h-full relative overflow-hidden shadow-[4px_8px_32px_0_rgba(0,0,0,0.08)] ring-1 ring-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:hover:-translate-y-2 hover:shadow-[8px_20px_48px_0_rgba(17,23,31,0.16)] hover:ring-[#C4D520]/40"
+          >
+            <span
+              class="pointer-events-none absolute inset-x-0 bottom-0 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+            ></span>
+            <span
+              class="pointer-events-none absolute -top-16 -right-16 w-40 h-40 rounded-full bg-[#C4D520]/20 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            ></span>
+
+            <div
+              class="relative flex items-center justify-between mb-3 md:mb-4 lg:mb-6"
+            >
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 transition-all duration-300 motion-safe:group-hover:scale-105 motion-safe:group-hover:-rotate-3"
+              >
+                <img
+                  src="assets/images/plumbing-financing-with-monthly-pricing.svg"
+                  alt="plumbing-financing-with-monthly-pricing"
+                />
+              </div>
+            </div>
+
+            <div class="relative flex flex-col grow">
+              <h3
+                class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize mb-3 xl:mb-4 transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+              >
+                Financing With Monthly Pricing
+              </h3>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] transition-colors duration-300 group-hover:text-[#11171F]"
+              >
+                GreenSky, Synchrony, Service Finance, Wisetack — financing
+                visible on every big-ticket service page with as-low-as
+                messaging.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="group bg-white p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between h-full relative overflow-hidden shadow-[4px_8px_32px_0_rgba(0,0,0,0.08)] ring-1 ring-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:hover:-translate-y-2 hover:shadow-[8px_20px_48px_0_rgba(17,23,31,0.16)] hover:ring-[#C4D520]/40"
+          >
+            <span
+              class="pointer-events-none absolute inset-x-0 bottom-0 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+            ></span>
+            <span
+              class="pointer-events-none absolute -top-16 -right-16 w-40 h-40 rounded-full bg-[#C4D520]/20 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            ></span>
+
+            <div
+              class="relative flex items-center justify-between mb-3 md:mb-4 lg:mb-6"
+            >
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 transition-all duration-300 motion-safe:group-hover:scale-105 motion-safe:group-hover:-rotate-3"
+              >
+                <img
+                  src="assets/images/plumbing-sewer-camera-inspection-content.svg"
+                  alt="plumbing-sewer-camera-inspection-content"
+                />
+              </div>
+            </div>
+
+            <div class="relative flex flex-col grow">
+              <h3
+                class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize mb-3 xl:mb-4 transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+              >
+                Sewer Camera Inspection Content
+              </h3>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] transition-colors duration-300 group-hover:text-[#11171F]"
+              >
+                Dedicated page for sewer camera inspection — what it is, when
+                you need one, how it identifies tree-root intrusion and pipe
+                collapse.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div
+            class="group bg-white p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between h-full relative overflow-hidden shadow-[4px_8px_32px_0_rgba(0,0,0,0.08)] ring-1 ring-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:hover:-translate-y-2 hover:shadow-[8px_20px_48px_0_rgba(17,23,31,0.16)] hover:ring-[#C4D520]/40"
+          >
+            <span
+              class="pointer-events-none absolute inset-x-0 bottom-0 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+            ></span>
+            <span
+              class="pointer-events-none absolute -top-16 -right-16 w-40 h-40 rounded-full bg-[#C4D520]/20 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            ></span>
+
+            <div
+              class="relative flex items-center justify-between mb-3 md:mb-4 lg:mb-6"
+            >
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 transition-all duration-300 motion-safe:group-hover:scale-105 motion-safe:group-hover:-rotate-3"
+              >
+                <img
+                  src="assets/images/plumbing-maintenance-plan-signup.svg"
+                  alt="plumbing-maintenance-plan-signup"
+                />
+              </div>
+            </div>
+
+            <div class="relative flex flex-col grow">
+              <h3
+                class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize mb-3 xl:mb-4 transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+              >
+                Maintenance Plan Signup
+              </h3>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] transition-colors duration-300 group-hover:text-[#11171F]"
+              >
+                Annual whole-home plumbing inspection memberships with priority
+                service, member discounts, and recurring water heater flushes.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div
+            class="group bg-white p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between h-full relative overflow-hidden shadow-[4px_8px_32px_0_rgba(0,0,0,0.08)] ring-1 ring-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:hover:-translate-y-2 hover:shadow-[8px_20px_48px_0_rgba(17,23,31,0.16)] hover:ring-[#C4D520]/40"
+          >
+            <span
+              class="pointer-events-none absolute inset-x-0 bottom-0 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+            ></span>
+            <span
+              class="pointer-events-none absolute -top-16 -right-16 w-40 h-40 rounded-full bg-[#C4D520]/20 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            ></span>
+
+            <div
+              class="relative flex items-center justify-between mb-3 md:mb-4 lg:mb-6"
+            >
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 transition-all duration-300 motion-safe:group-hover:scale-105 motion-safe:group-hover:-rotate-3"
+              >
+                <img
+                  src="assets/images/plumbing-insurance-claim-assistance-for-water-damage.svg"
+                  alt="plumbing-insurance-claim-assistance-for-water-damage"
+                />
+              </div>
+            </div>
+
+            <div class="relative flex flex-col grow">
+              <h3
+                class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize mb-3 xl:mb-4 transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+              >
+                Insurance Claim Assistance For Water Damage
+              </h3>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] transition-colors duration-300 group-hover:text-[#11171F]"
+              >
+                Burst-pipe jobs often involve insurance claims. Visible we work
+                with adjusters and claim-friendly invoicing messaging wins these
+                higher-margin emergency jobs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div
+            class="group bg-white p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between h-full relative overflow-hidden shadow-[4px_8px_32px_0_rgba(0,0,0,0.08)] ring-1 ring-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:hover:-translate-y-2 hover:shadow-[8px_20px_48px_0_rgba(17,23,31,0.16)] hover:ring-[#C4D520]/40"
+          >
+            <span
+              class="pointer-events-none absolute inset-x-0 bottom-0 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+            ></span>
+            <span
+              class="pointer-events-none absolute -top-16 -right-16 w-40 h-40 rounded-full bg-[#C4D520]/20 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            ></span>
+
+            <div
+              class="relative flex items-center justify-between mb-3 md:mb-4 lg:mb-6"
+            >
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 transition-all duration-300 motion-safe:group-hover:scale-105 motion-safe:group-hover:-rotate-3"
+              >
+                <img
+                  src="assets/images/plumbing-service-area-map-with-response-time-commitment.svg"
+                  alt="plumbing-service-area-map-with-response-time-commitment"
+                />
+              </div>
+            </div>
+
+            <div class="relative flex flex-col grow">
+              <h3
+                class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize mb-3 xl:mb-4 transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+              >
+                Service-Area Map With Response-Time Commitment
+              </h3>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] transition-colors duration-300 group-hover:text-[#11171F]"
+              >
+                Specific ZIP coverage with response-within-X-hours commitment.
+                Filters out-of-zone calls and signals reliability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--   Website Design Built Around Your Specific Plumbers Niche -->
+    <section class="relative bg-[#FFFAEB] py-12 md:py-16 lg:py-20 xl:py-24">
+      <div class="container">
+
+                <!-- Grid lines (background layer) -->
+        <div
+          class="pointer-events-none absolute inset-0 z-0"
+          aria-hidden="true"
+        >
+          <div class="container relative mx-auto flex h-full justify-between">
+            <span class="h-full w-px bg-[#144947] opacity-[0.12]"></span>
+            <span class="h-full w-px bg-[#144947] opacity-[0.12]"></span>
+            <span class="h-full w-px bg-[#144947] opacity-[0.12]"></span>
+            <span class="h-full w-px bg-[#144947] opacity-[0.12]"></span>
+          </div>
+        </div>
+        <div
+          class="relative z-10 grid grid-cols-1 xl:grid-cols-12 gap-6 md:gap-8 lg:gap-10 xl:gap-0"
+        >
+          <!-- Left Column: Title and Description -->
+          <div class="xl:col-span-4">
+            <div
+              class="flex flex-col text-center items-center max-w-248 mx-auto xl:mx-0 xl:text-start xl:items-start xl:justify-start xl:sticky xl:top-20"
+            >
+              <div
+                class="inline-flex items-center self-center xl:self-start px-3 py-2 rounded-full border border-[#171E27] text-[#171E27] anton text-x md:text-base lg:text-lg xl:text-xl font-normal leading-none uppercase mb-3 lg:mb-4.5 xl:mb-6"
+              >
+                8 specializations, one playbook
+              </div>
+              <h2
+                class="anton text-[#171E27] text-2xl md:text-[32px] lg:text-[48px] xl:text-[56px] font-normal leading-[120%] mb-3 lg:mb-4.5 xl:mb-6"
+              >
+                Website Design Built Around Your Specific Plumbers Niche
+              </h2>
+              <p
+                class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%]"
+              >
+                A residential repair plumber and a commercial sewer-line
+                specialist sell entirely different services to entirely
+                different buyers. We design for the niche.
+              </p>
+              <!-- Primary button -->
+              <div class="hidden xl:block mt-8">
+                <a
+                  href="#"
+                  data-hover-bg="#144947"
+                  data-hover-text="#ffffff"
+                  class="plumbing-cta relative inline-flex overflow-hidden rounded-full bg-[#C4D520] px-5 py-3.5 md:px-8 md:py-4.5 anton text-[#11171F] text-sm md:text-xl font-normal leading-none transition-transform duration-300 active:scale-[0.97]"
+                >
+                  <span
+                    class="plumbing-cta-fill pointer-events-none absolute left-0 top-0 rounded-full"
+                  ></span>
+                  <span class="plumbing-cta-label relative block"
+                    >Book a Free 30-Min Call</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Cards Grid -->
+          <div
+            class="xl:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 lg:gap-6 xl:gap-8 px-1 md:px-2"
+          >
+            <!-- Card 1: Residential Plumbing Repair -->
+            <div
+              class="group relative bg-white rounded-3xl md:rounded-4xl overflow-hidden flex flex-col cursor-pointer shadow-[4px_8px_64px_0_rgba(0,0,0,0.08)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:shadow-[8px_24px_64px_-8px_rgba(17,23,31,0.22)] motion-safe:hover:-translate-y-2"
+            >
+              <span
+                class="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+              ></span>
+              <div class="relative w-full aspect-auto overflow-hidden">
+                <img
+                  src="assets/images/project-residential-plumbing-repair.png"
+                  alt="Residential Plumbing Repair"
+                  class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+                <span
+                  class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100 bg-linear-to-t from-[#184241]/80 via-[#184241]/35 to-[#11171F]/10"
+                ></span>
+              </div>
+              <div
+                class="grid grid-cols-[auto_1fr] gap-3 md:gap-4 p-4 md:p-6 xl:p-8 items-start"
+              >
+                <div
+                  class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 shrink-0 transition-transform duration-500 ease-out motion-safe:group-hover:scale-110 motion-safe:group-hover:-rotate-6"
+                >
+                  <img
+                    src="assets/images/residential-plumbing-repair.svg"
+                    alt="icon"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <h3
+                    class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+                  >
+                    Residential Plumbing Repair
+                  </h3>
+                  <p
+                    class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] mt-2 md:mt-3 transition-colors duration-300 group-hover:text-[#11171F]"
+                  >
+                    Symptom-search pages, transparent service pricing, 24/7
+                    emergency banner, financing for water heaters and repipes,
+                    maintenance plan signup.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Commercial Plumbing -->
+            <div
+              class="group relative bg-white rounded-3xl md:rounded-4xl overflow-hidden flex flex-col cursor-pointer shadow-[4px_8px_64px_0_rgba(0,0,0,0.08)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:shadow-[8px_24px_64px_-8px_rgba(17,23,31,0.22)] motion-safe:hover:-translate-y-2"
+            >
+              <span
+                class="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+              ></span>
+              <div class="relative w-full aspect-auto overflow-hidden">
+                <img
+                  src="assets/images/project-commercial-plumbing.png"
+                  alt="Commercial Plumbing"
+                  class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+                <span
+                  class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100 bg-linear-to-t from-[#184241]/80 via-[#184241]/35 to-[#11171F]/10"
+                ></span>
+              </div>
+              <div
+                class="grid grid-cols-[auto_1fr] gap-3 md:gap-4 p-4 md:p-6 xl:p-8 items-start"
+              >
+                <div
+                  class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 shrink-0 transition-transform duration-500 ease-out motion-safe:group-hover:scale-110 motion-safe:group-hover:-rotate-6"
+                >
+                  <img
+                    src="assets/images/project-icon-commercial-plumbing.svg"
+                    alt="icon"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <h3
+                    class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+                  >
+                    Commercial Plumbing
+                  </h3>
+                  <p
+                    class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] mt-2 md:mt-3 transition-colors duration-300 group-hover:text-[#11171F]"
+                  >
+                    B2B positioning, sectors served (restaurant, medical,
+                    office, multi-family), capabilities matrix, after-hours
+                    availability, bonding info, preventive contract pricing.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Drain Cleaning Specialist -->
+            <div
+              class="group relative bg-white rounded-3xl md:rounded-4xl overflow-hidden flex flex-col cursor-pointer shadow-[4px_8px_64px_0_rgba(0,0,0,0.08)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:shadow-[8px_24px_64px_-8px_rgba(17,23,31,0.22)] motion-safe:hover:-translate-y-2"
+            >
+              <span
+                class="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+              ></span>
+              <div class="relative w-full aspect-auto overflow-hidden">
+                <img
+                  src="assets/images/project-drain-cleaning-specialist.png"
+                  alt="Drain Cleaning Specialist"
+                  class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+                <span
+                  class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100 bg-linear-to-t from-[#184241]/80 via-[#184241]/35 to-[#11171F]/10"
+                ></span>
+              </div>
+              <div
+                class="grid grid-cols-[auto_1fr] gap-3 md:gap-4 p-4 md:p-6 xl:p-8 items-start"
+              >
+                <div
+                  class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 shrink-0 transition-transform duration-500 ease-out motion-safe:group-hover:scale-110 motion-safe:group-hover:-rotate-6"
+                >
+                  <img
+                    src="assets/images/project-icon-project-icon-commercial-plumbing.svg"
+                    alt="icon"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <h3
+                    class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+                  >
+                    Drain Cleaning Specialist
+                  </h3>
+                  <p
+                    class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] mt-2 md:mt-3 transition-colors duration-300 group-hover:text-[#11171F]"
+                  >
+                    Hydro-jetting positioning, recurring drain treatments,
+                    restaurant grease-trap service, root-intrusion expertise,
+                    sewer camera inspection upsell.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Water Heater Specialist -->
+            <div
+              class="group relative bg-white rounded-3xl md:rounded-4xl overflow-hidden flex flex-col cursor-pointer shadow-[4px_8px_64px_0_rgba(0,0,0,0.08)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:shadow-[8px_24px_64px_-8px_rgba(17,23,31,0.22)] motion-safe:hover:-translate-y-2"
+            >
+              <span
+                class="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+              ></span>
+              <div class="relative w-full aspect-auto overflow-hidden">
+                <img
+                  src="assets/images/project-water-heater-specialist.png"
+                  alt="Water Heater Specialist"
+                  class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+                <span
+                  class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100 bg-linear-to-t from-[#184241]/80 via-[#184241]/35 to-[#11171F]/10"
+                ></span>
+              </div>
+              <div
+                class="grid grid-cols-[auto_1fr] gap-3 md:gap-4 p-4 md:p-6 xl:p-8 items-start"
+              >
+                <div
+                  class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 shrink-0 transition-transform duration-500 ease-out motion-safe:group-hover:scale-110 motion-safe:group-hover:-rotate-6"
+                >
+                  <img
+                    src="assets/images/project-icon-water-heater-specialist.svg"
+                    alt="icon"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <h3
+                    class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+                  >
+                    Water Heater Specialist
+                  </h3>
+                  <p
+                    class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] mt-2 md:mt-3 transition-colors duration-300 group-hover:text-[#11171F]"
+                  >
+                    Tankless vs tank comparison, installation pricing tiers,
+                    replacement vs repair decision tree, brand certifications
+                    (Rinnai, Navien, Bradford White), financing.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5: Emergency Plumber -->
+            <div
+              class="group relative bg-white rounded-3xl md:rounded-4xl overflow-hidden flex flex-col cursor-pointer shadow-[4px_8px_64px_0_rgba(0,0,0,0.08)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:shadow-[8px_24px_64px_-8px_rgba(17,23,31,0.22)] motion-safe:hover:-translate-y-2"
+            >
+              <span
+                class="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+              ></span>
+              <div class="relative w-full aspect-auto overflow-hidden">
+                <img
+                  src="assets/images/project-emergency-plumbing.png"
+                  alt="Emergency Plumber"
+                  class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+                <span
+                  class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100 bg-linear-to-t from-[#184241]/80 via-[#184241]/35 to-[#11171F]/10"
+                ></span>
+              </div>
+              <div
+                class="grid grid-cols-[auto_1fr] gap-3 md:gap-4 p-4 md:p-6 xl:p-8 items-start"
+              >
+                <div
+                  class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 shrink-0 transition-transform duration-500 ease-out motion-safe:group-hover:scale-110 motion-safe:group-hover:-rotate-6"
+                >
+                  <img
+                    src="assets/images/project-icon-emergency-plumbing.svg"
+                    alt="icon"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <h3
+                    class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+                  >
+                    Emergency plumbing
+                  </h3>
+                  <p
+                    class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] mt-2 md:mt-3 transition-colors duration-300 group-hover:text-[#11171F]"
+                  >
+                    24/7 dispatch positioning, response-time commitments,
+                    after-hours pricing transparency, common emergency pages
+                    (burst pipe, sewer backup, no hot water).
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6: Trenchless Specialist -->
+            <div
+              class="group relative bg-white rounded-3xl md:rounded-4xl overflow-hidden flex flex-col cursor-pointer shadow-[4px_8px_64px_0_rgba(0,0,0,0.08)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:shadow-[8px_24px_64px_-8px_rgba(17,23,31,0.22)] motion-safe:hover:-translate-y-2"
+            >
+              <span
+                class="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+              ></span>
+              <div class="relative w-full aspect-auto overflow-hidden">
+                <img
+                  src="assets/images/project-sewer-line-specialist.png"
+                  alt="Trenchless Specialist"
+                  class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+                <span
+                  class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100 bg-linear-to-t from-[#184241]/80 via-[#184241]/35 to-[#11171F]/10"
+                ></span>
+              </div>
+              <div
+                class="grid grid-cols-[auto_1fr] gap-3 md:gap-4 p-4 md:p-6 xl:p-8 items-start"
+              >
+                <div
+                  class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 shrink-0 transition-transform duration-500 ease-out motion-safe:group-hover:scale-110 motion-safe:group-hover:-rotate-6"
+                >
+                  <img
+                    src="assets/images/project-icon-sewer-line-specialist.svg"
+                    alt="icon"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <h3
+                    class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+                  >
+                    Sewer line specialist
+                  </h3>
+                  <p
+                    class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] mt-2 md:mt-3 transition-colors duration-300 group-hover:text-[#11171F]"
+                  >
+                    Trenchless vs traditional comparison, sewer camera
+                    inspection, root intrusion expertise, line replacement vs
+                    repair, financing for $7K–15K jobs.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 7: Remodels Contractor -->
+            <div
+              class="group relative bg-white rounded-3xl md:rounded-4xl overflow-hidden flex flex-col cursor-pointer shadow-[4px_8px_64px_0_rgba(0,0,0,0.08)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:shadow-[8px_24px_64px_-8px_rgba(17,23,31,0.22)] motion-safe:hover:-translate-y-2"
+            >
+              <span
+                class="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+              ></span>
+              <div class="relative w-full aspect-auto overflow-hidden">
+                <img
+                  src="assets/images/project-repipe-specialist.png"
+                  alt="Remodels Contractor"
+                  class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+                <span
+                  class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100 bg-linear-to-t from-[#184241]/80 via-[#184241]/35 to-[#11171F]/10"
+                ></span>
+              </div>
+              <div
+                class="grid grid-cols-[auto_1fr] gap-3 md:gap-4 p-4 md:p-6 xl:p-8 items-start"
+              >
+                <div
+                  class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 shrink-0 transition-transform duration-500 ease-out motion-safe:group-hover:scale-110 motion-safe:group-hover:-rotate-6"
+                >
+                  <img
+                    src="assets/images/project-icon-repipe-specialist.svg"
+                    alt="icon"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <h3
+                    class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+                  >
+                    Repipe specialist
+                  </h3>
+                  <p
+                    class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] mt-2 md:mt-3 transition-colors duration-300 group-hover:text-[#11171F]"
+                  >
+                    Whole-home repipe positioning, PEX vs copper comparison,
+                    schedule expectations, financing for $8K–18K jobs, warranty
+                    terms.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 8: Eco-Friendly Plumbing -->
+            <div
+              class="group relative bg-white rounded-3xl md:rounded-4xl overflow-hidden flex flex-col cursor-pointer shadow-[4px_8px_64px_0_rgba(0,0,0,0.08)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:shadow-[8px_24px_64px_-8px_rgba(17,23,31,0.22)] motion-safe:hover:-translate-y-2"
+            >
+              <span
+                class="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-1 bg-[#C4D520] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+              ></span>
+              <div class="relative w-full aspect-auto overflow-hidden">
+                <img
+                  src="assets/images/project-remodel-plumbing.png"
+                  alt="Eco-Friendly Plumbing"
+                  class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+                <span
+                  class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100 bg-linear-to-t from-[#184241]/80 via-[#184241]/35 to-[#11171F]/10"
+                ></span>
+              </div>
+              <div
+                class="grid grid-cols-[auto_1fr] gap-3 md:gap-4 p-4 md:p-6 xl:p-8 items-start"
+              >
+                <div
+                  class="w-12 h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16 shrink-0 transition-transform duration-500 ease-out motion-safe:group-hover:scale-110 motion-safe:group-hover:-rotate-6"
+                >
+                  <img
+                    src="assets/images/project-icon-remodel-plumbing.svg"
+                    alt="icon"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <h3
+                    class="anton text-[#11171F] text-lg md:text-xl xl:text-2xl font-normal leading-[120%] capitalize transition-transform duration-300 motion-safe:group-hover:translate-x-1"
+                  >
+                    ERemodel plumbing
+                  </h3>
+                  <p
+                    class="farro text-[#3F4957] text-xs md:text-sm lg:text-base font-normal leading-[150%] mt-2 md:mt-3 transition-colors duration-300 group-hover:text-[#11171F]"
+                  >
+                    Bathroom and kitchen remodel partnerships with GCs, fixture
+                    install expertise, gas line work, permit pulling, designer
+                    collaboration.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<!-- Primary button -->
+<div class="flex xl:hidden items-center justify-center">
+  <a
+    href="#"
+    data-hover-bg="#144947"
+    data-hover-text="#ffffff"
+    class="plumbing-cta relative inline-flex overflow-hidden rounded-full bg-[#C4D520] px-5 py-3.5 md:px-8 md:py-4.5 anton text-[#11171F] text-sm md:text-xl font-normal leading-none transition-transform duration-300 active:scale-[0.97]"
+  >
+    <span
+      class="plumbing-cta-fill pointer-events-none absolute left-0 top-0 rounded-full"
+    ></span>
+    <span class="plumbing-cta-label relative block">
+      Book a Free 30-Min Call
+    </span>
+  </a>
+</div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--  Plumber Website Near Me at Only $999 -->
+    <section
+      class="cta-sections overflow-hidden section-padding bg-[#144947] text-center relative"
+    >
+      <img
+        src="assets/images/shape-top.png"
+        class="img-fluid absolute top-0 left-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+        alt
+      />
+      <img
+        src="assets/images/shape-right.png"
+        class="img-fluid absolute bottom-0 right-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+        alt
+      />
+
+      <div class="container">
+        <div class="cta-wrap z-80 relative">
+          <div class="max-w-184 mx-auto">
+            <div
+              class="plumbing-section-heading text-center max-w-184 mx-auto md:mb-12 mb-6"
+            >
+              <h2
+                class="anton text-white text-2xl md:text-[32px] lg:text-[48px] xl:text-[56px] font-normal leading-[120%]"
+              >
+                Plumber Website Near Me at Only $999
+              </h2>
+              <p
+                class="farro text-white text-xs md:text-sm lg:text-base font-normal leading-[150%] mt-3 md:mt-6 lg:mt-4 xl:mt-6"
+              >
+                Book a free 15-minute call. We'll review your current site,
+                audit your top three competitors who outrank you, name the three
+                biggest leaks costing you emergency calls right now, and tell
+                you honestly whether the Pixxen Plumbing Pack fits — or whether
+                you need something bigger.
+              </p>
+
+              <div class="flex justify-center mt-6 md:mt-8 lg:mt-6 xl:mt-8">
+                <!-- Primary button -->
+                <a
+                  href="#"
+                  data-hover-bg="#FFFAEB"
+                  data-hover-text="#11171F"
+                  class="plumbing-cta relative inline-flex overflow-hidden rounded-full bg-[#C4D520] px-5 py-3.5 md:px-8 md:py-4.5 anton text-[#11171F] text-sm md:text-xl font-normal leading-none transition-transform duration-300 active:scale-[0.97]"
+                >
+                  <span
+                    class="plumbing-cta-fill pointer-events-none absolute left-0 top-0 rounded-full"
+                  ></span>
+                  <span class="plumbing-cta-label relative block"
+                    >Book a Free 30-Min Call</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer class="relative">
+      <div
+        class="bg-[#144947] text-white border-t border-b border-[#285942] farro"
+      >
+        <div class="container">
+          <!-- Desktop Grid Layout -->
+          <div class="grid md:grid-cols-12 md:gap-8 lg:gap-12">
+            <div
+              class="lg:col-span-8 md:col-span-7 md:py-12 py-6 flex flex-col gap-25 justify-between md:border-b-0 border-b border-[#285942]"
+            >
+              <div class="grid md:grid-cols-4 grid-cols-2 xl:gap-8 gap-4">
+                <!-- Services Column -->
+                <div class>
+                  <p
+                    class="text-white text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6"
+                  >
+                    Services
+                  </p>
+                  <ul class="space-y-2 lg:space-y-3">
+                    <li>
+                      <a
+                        href="mobile-app-design.html"
+                        class="text-white hover:text-[#C4D520] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >MOBILE APP DESIGN</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="dashboard-design.html"
+                        class="text-white hover:text-[#C4D520] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >DASHBOARD DESIGN</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="website-design.html"
+                        class="text-white hover:text-[#C4D520] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >WEBSITE DESIGN</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="web-application-design.html"
+                        class="text-white hover:text-[#C4D520] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >WEB APP DESIGN</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="saas-design.html"
+                        class="text-white hover:text-[#C4D520] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >SAAS DESIGN</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="branding-design.html"
+                        class="text-white hover:text-[#C4D520] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >BRANDING</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Pixxen Column -->
+                <div class>
+                  <p
+                    class="text-white text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6"
+                  >
+                    Pixxen
+                  </p>
+                  <ul class="space-y-2 lg:space-y-3">
+                    <li>
+                      <a
+                        href="about.html"
+                        class="text-white hover:text-[#C4D520] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >ABOUT</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="contact.html"
+                        class="text-white hover:text-[#C4D520] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >CONTACT</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="career.html"
+                        class="text-white hover:text-[#C4D520] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >CAREER</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="team.html"
+                        class="text-white hover:text-[#C4D520] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >TEAM</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Resources Column -->
+                <div class>
+                  <p
+                    class="text-white text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6"
+                  >
+                    Resources
+                  </p>
+                  <ul class="space-y-2 lg:space-y-3">
+                    <li>
+                      <a
+                        href="case-study.html"
+                        class="text-white hover:text-[#C4D520] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >CASE STUDIES</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="blog.html"
+                        class="text-white hover:text-[#C4D520] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >BLOGS</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Legal Column -->
+                <div class>
+                  <p
+                    class="text-white text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6"
+                  >
+                    Legal
+                  </p>
+                  <ul class="space-y-2 lg:space-y-3">
+                    <li>
+                      <a
+                        href="terms.html"
+                        class="text-white hover:text-[#C4D520] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >TERMS</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="privacy.html"
+                        class="text-white hover:text-[#C4D520] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >PRIVACY</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Copyright -->
+              <div
+                class="mt-8 lg:mt-0 pt-6 lg:pt-0 border-t border-[#285942] lg:border-0 md:block hidden"
+              >
+                <p class="text-white text-sm text-center lg:text-left">
+                  © 2026 PIXXEN
+                </p>
+              </div>
+            </div>
+
+            <!-- Newsletter Column -->
+            <div
+              class="md:pl-10 lg:pl-14 md:border-l border-[#285942] lg:col-span-4 md:col-span-5 md:py-12 sm:py-8 py-6 flex flex-col justify-between gap-5"
+            >
+              <div>
+                <p
+                  class="text-white md:text-lg text-base font-semibold md:mb-3 mb-2 lg:mb-4"
+                >
+                  Join 5,000+ design lovers.
+                </p>
+                <p class="text-white sm:text-sm text-[12px] mb-4 lg:mb-6">
+                  Monthly design insights, case studies, and inspiration
+                  straight to your inbox.
+                </p>
+
+                <!-- Email Input -->
+                <div class="relative mb-3 md:mb-8 lg:mb-12">
+                  <input
+                    type="email"
+                    placeholder="Email address"
+                    class="w-full bg-transparent border border-[#C4D520] rounded-2xl px-4 py-5 lg:py-3.5 h-16 text-white placeholder-[#ffffff] focus:outline-none focus:border-[#FFFAEB] transition-colors text-[12px] sm:text-sm lg:text-base pr-14"
+                  />
+                  <button
+                    class="absolute group cursor-pointer right-px top-1/2 -translate-y-1/2 bg-[#C4D520] hover:bg-[#FFFAEB] p-5 rounded-r-2xl transition-colors"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="21"
+                      viewBox="0 0 22 21"
+                      fill="none"
+                    >
+                      <path
+                        d="M16.2288 9.03763L9.0768 1.88561L10.9624 0L21.3333 10.371L10.9624 20.7418L9.0768 18.8562L16.2288 11.7043H0V9.03763H16.2288Z"
+                        fill="#11171F"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Social Icons -->
+              <div
+                class="flex md:justify-start justify-center md:gap-2 gap-1 lg:gap-2"
+              >
+                <a
+                  href="#"
+                  class="bg-[#C4D520] hover:bg-[#FFFAEB] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.9887 11.5716C19.9029 9.94513 19.3313 8.44745 18.4163 7.22097C18.1749 7.48407 17.8785 7.7698 17.4957 8.09159C16.5881 8.85458 15.4887 9.54307 14.1834 10.101C14.3498 10.4506 14.5029 10.7899 14.6376 11.1098L14.6388 11.1125C14.6652 11.1742 14.6879 11.2306 14.7321 11.3418C14.7379 11.3562 14.7433 11.3697 14.7485 11.3825C16.2621 11.2122 17.8576 11.2749 19.4049 11.4845C19.6106 11.5123 19.805 11.5415 19.9887 11.5716ZM10.6044 4.1213C10.7783 4.36621 10.9602 4.62859 11.1803 4.95378C11.7929 5.8589 12.396 6.81391 12.9604 7.79507C13.0749 7.99416 13.187 8.19289 13.2964 8.39112C14.5193 7.90993 15.5296 7.30281 16.3438 6.62486C16.6731 6.35063 16.9383 6.093 17.1403 5.86972C15.7501 4.70277 13.9571 4 12 4C11.524 4 11.0576 4.04158 10.6044 4.1213ZM4.25266 9.99755C4.83145 9.98452 5.48467 9.94941 6.29303 9.87518C7.90024 9.72758 9.54141 9.46249 11.1549 9.05274C10.5719 8.03721 9.93888 7.02331 9.29452 6.05378C8.98479 5.58775 8.68357 5.14992 8.45484 4.82642C6.39541 5.84613 4.83794 7.72658 4.25266 9.99755ZM5.78366 17.036C6.17111 16.4693 6.68061 15.8314 7.35797 15.1374C8.81199 13.6478 10.5286 12.4878 12.5139 11.8473C12.5417 11.8391 12.5604 11.8336 12.576 11.829C12.411 11.4651 12.2562 11.1405 12.1003 10.8342C10.2643 11.3687 8.3303 11.703 6.40279 11.8762C5.46319 11.9606 4.62005 11.9981 4 12.0044C4.00102 13.9112 4.66915 15.662 5.78366 17.036ZM15.0045 19.4166C14.9001 18.8745 14.7669 18.2706 14.5899 17.574C14.2689 16.3112 13.8668 15.012 13.373 13.7078C11.3712 14.4343 9.77574 15.4974 8.54309 16.7649C7.94904 17.3757 7.51244 17.9537 7.22642 18.4203C8.55892 19.4127 10.2109 20 12 20C13.0626 20 14.0769 19.7928 15.0045 19.4166ZM16.8778 18.3414C18.4073 17.1632 19.4985 15.444 19.8652 13.4703C19.5253 13.3865 19.094 13.3005 18.6196 13.2346C17.5756 13.0897 16.5014 13.0655 15.4409 13.2018C15.8933 14.4764 16.2642 15.7332 16.5608 16.9361C16.6903 17.4614 16.7958 17.9358 16.8778 18.3414ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z"
+                      fill="#11171F"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="bg-[#C4D520] hover:bg-[#FFFAEB] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.5 11C8.60457 11 9.5 10.1046 9.5 9C9.5 7.89543 8.60457 7 7.5 7H3V11H7.5ZM8.5 13H3V17H8.5C9.60457 17 10.5 16.1046 10.5 15C10.5 13.8954 9.60457 13 8.5 13ZM10.5632 11.5725C11.7239 12.2726 12.5 13.5457 12.5 15C12.5 17.2091 10.7091 19 8.5 19H1V5H7.5C9.70914 5 11.5 6.79086 11.5 9C11.5 9.97964 11.1478 10.877 10.5632 11.5725ZM15.5 6H21V7.5H15.5V6ZM23 14.5H15.5V14.75C15.5 16.2688 16.7312 17.5 18.25 17.5C19.3187 17.5 20.245 16.8904 20.7001 16H22.8338C22.2851 18.0169 20.4407 19.5 18.25 19.5C15.6266 19.5 13.5 17.3734 13.5 14.75V13.25C13.5 10.6266 15.6266 8.5 18.25 8.5C20.8734 8.5 23 10.6266 23 13.25V14.5ZM20.8965 12.5C20.57 11.3457 19.5088 10.5 18.25 10.5C16.9912 10.5 15.93 11.3457 15.6035 12.5H20.8965Z"
+                      fill="#11171F"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="bg-[#C4D520] hover:bg-[#FFFAEB] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13 9H17.5L17 11H13V20H11V11H7V9H11V7.12777C11 5.34473 11.1857 4.69816 11.5343 4.04631C11.8829 3.39446 12.3945 2.88288 13.0463 2.53427C13.6982 2.18565 14.3447 2 16.1278 2C16.6498 2 17.1072 2.05 17.5 2.15V4H16.1278C14.8041 4 14.401 4.07784 13.9895 4.29789C13.6862 4.46011 13.4601 4.68619 13.2979 4.98951C13.0778 5.40096 13 5.80407 13 7.12777V9Z"
+                      fill="#11171F"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="bg-[#C4D520] hover:bg-[#FFFAEB] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 9.55005C12.9171 8.61327 14.1111 8 15.5 8C18.5375 8 21 10.4624 21 13.5V21H19V13.5C19 11.567 17.433 10 15.5 10C13.567 10 12 11.567 12 13.5V21H10V8.5H12V9.55005ZM5 6.5C4.17157 6.5 3.5 5.82843 3.5 5C3.5 4.17157 4.17157 3.5 5 3.5C5.82842 3.5 6.5 4.17157 6.5 5C6.5 5.82843 5.82842 6.5 5 6.5ZM4 8.5H6V21H4V8.5Z"
+                      fill="#11171F"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <!-- Copyright -->
+              <div class="mt-1 flex justify-center md:hidden">
+                <p class="text-white text-sm text-center lg:text-left">
+                  © 2026 PIXXEN
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-linear-to-b from-[#144947] to-[#C4D520] sticky -z-10 bottom-0 left-0 w-full flex justify-center items-end"
+      >
+        <div class="flex justify-center text-center">
+          <img
+            src="assets/images/plumbing-footer-pixxen-logo.svg"
+            class="img-fluid w-full object-contain"
+            alt="footerlogo"
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/SplitText.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
