@@ -284,60 +284,61 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const track = document.querySelector(".plumbing-projects-track");
     const headerElement = document.querySelector("#plumbing-project-section-header");
-    const cards = gsap.utils.toArray(".plumbing-project-card");
 
-    if (track && headerElement) {
-        const getScrollAmount = () => {
-            return -(track.scrollWidth - window.innerWidth);
-        };
+    if (!track || !headerElement) return;
 
-        ScrollTrigger.matchMedia({
-            
-            // DESKTOP (Width 768px and up): GSAP Pin & Horizontal Scroll Active
-            "(min-width: 768px)": function() {
-                const horizontalTween = gsap.to(track, {
-                    x: getScrollAmount,
-                    ease: "none",
-                    scrollTrigger: {
-                        trigger: headerElement,
-                        pin: "#pinned-projects-section",
-                        anticipatePin: 1,
-                        scrub: 0.5,
-                        start: "top top",
-                        end: () => "+=" + Math.abs(getScrollAmount()),
-                        invalidateOnRefresh: true,
-                        markers: false
-                    }
-                });
+    const getScrollAmount = () => -(track.scrollWidth - window.innerWidth);
 
-                cards.forEach((card) => {
-                    gsap.fromTo(card, 
-                        { opacity: 0.8, scale: 0.98, y: 0 },
-                        {
-                            opacity: 1,
-                            scale: 1,
-                            y: 0,
-                            duration: 0.8,
-                            ease: "power2.out",
-                            scrollTrigger: {
-                                trigger: card,
-                                containerAnimation: horizontalTween,
-                                start: "left 90%",
-                                toggleActions: "play reverse play reverse",
-                                markers: false
-                            }
+    ScrollTrigger.matchMedia({
+
+        // DESKTOP (768px and up): pin + horizontal scroll
+        "(min-width: 768px)": function () {
+            const cards = gsap.utils.toArray(".plumbing-project-card");
+
+            const horizontalTween = gsap.to(track, {
+                x: getScrollAmount,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: headerElement,
+                    pin: "#pinned-projects-section",
+                    anticipatePin: 1,
+                    scrub: 0.5,
+                    start: "top top",
+                    end: () => "+=" + Math.abs(getScrollAmount()),
+                    invalidateOnRefresh: true, // recalculates on resize
+                    markers: false
+                }
+            });
+
+            cards.forEach((card) => {
+                gsap.fromTo(
+                    card,
+                    { opacity: 0.8, scale: 0.98, y: 0 },
+                    {
+                        opacity: 1,
+                        scale: 1,
+                        y: 0,
+                        duration: 0.8,
+                        ease: "power2.out",
+                        scrollTrigger: {
+                            trigger: card,
+                            containerAnimation: horizontalTween,
+                            start: "left 90%",
+                            toggleActions: "play reverse play reverse",
+                            markers: false
                         }
-                    );
-                });
-            },
+                    }
+                );
+            });
+        },
 
-            // MOBILE (Below 768px): No GSAP animations or pinning. 
-            // The cards behave entirely like a native touch slider.
-            "(max-width: 767px)": function() {
-                return function() {
-                    // Cleanup if needed when resizing back and forth
-                };
-            }
-        });
-    }
+        // MOBILE (below 768px): native touch slider, no GSAP
+        "(max-width: 767px)": function () {
+            // Nothing to set up. Any desktop animations are reverted
+            // automatically and inline styles are cleared when this query matches.
+        }
+    });
+
+    // Optional: recalc after images/fonts load so the scroll distance is accurate
+    window.addEventListener("load", () => ScrollTrigger.refresh());
 });
