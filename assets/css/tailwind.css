@@ -866,3 +866,5 @@ html.lenis body {
 
 
 
+.plumbing-horizontal-track-wrapper::-webkit-scrollbar { display: none; }
+.plumbing-horizontal-track-wrapper { scrollbar-width: none; }
