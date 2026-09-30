@@ -865,6 +865,17 @@ html.lenis body {
 
 
 
+.plumbing-faq-content {
+    max-height: 0;
+    transition: max-height 0.4s ease;
+}
 
+.plumbing-faq-content p {
+    margin: 0;
+}
+
+.plumbing-icon-close img {
+    transition: transform 0.3s ease;
+}
 .plumbing-horizontal-track-wrapper::-webkit-scrollbar { display: none; }
 .plumbing-horizontal-track-wrapper { scrollbar-width: none; }

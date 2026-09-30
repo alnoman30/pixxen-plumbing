@@ -342,3 +342,271 @@ document.addEventListener("DOMContentLoaded", () => {
     // Optional: recalc after images/fonts load so the scroll distance is accurate
     window.addEventListener("load", () => ScrollTrigger.refresh());
 });
+
+// Plumbing section heading reveal
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger, SplitText);
+
+  const headings = gsap.utils.toArray(".plumbing-section-heading");
+
+  headings.forEach((heading) => {
+    let split;
+
+    const createAnimation = () => {
+      // Clean up the previous SplitText instance
+      if (split) {
+        split.revert();
+      }
+
+      // Create a new split based on the current screen width
+      split = new SplitText(heading, {
+        type: "lines",
+        linesClass: "split-line",
+        mask: "lines",
+      });
+
+      // Set initial state
+      gsap.set(split.lines, {
+        yPercent: 110,
+        opacity: 0,
+      });
+
+      // Create animation
+      gsap.to(split.lines, {
+        yPercent: 0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.12,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: heading,
+          start: "top 85%",
+          toggleActions: "play none none none",
+          invalidateOnRefresh: true,
+        },
+      });
+    };
+
+    createAnimation();
+
+    // Re-split when the window is resized
+    let resizeTimer;
+
+    window.addEventListener("resize", () => {
+      clearTimeout(resizeTimer);
+
+      resizeTimer = setTimeout(() => {
+        // Kill existing ScrollTrigger for this heading
+        ScrollTrigger.getAll().forEach((trigger) => {
+          if (trigger.trigger === heading) {
+            trigger.kill();
+          }
+        });
+
+        createAnimation();
+
+        // Refresh ScrollTrigger positions
+        ScrollTrigger.refresh();
+      }, 250);
+    });
+  });
+});
+
+
+// Plumbing banner section animation
+/*
+  Plumbing hero: GSAP animation (mobile-optimised)
+  Requires GSAP core only (no plugins):
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  Load this file after GSAP, at the end of <body>.
+*/
+(function () {
+  const section = document.getElementById('therappy-banner-section');
+  if (!section || !window.gsap) return;
+
+  const q = (s) => section.querySelector(s);
+  const qa = (s) => section.querySelectorAll(s);
+
+  /* ---------- 1. CTA: fill expands from the pointer's entry point (hover devices only) ---------- */
+  function initCta() {
+    if (!window.matchMedia('(hover: hover)').matches) return; // skip on touch screens
+
+    qa('.plumbing-cta').forEach((btn) => {
+      const fill = btn.querySelector('.plumbing-cta-fill');
+      const label = btn.querySelector('.plumbing-cta-label');
+      if (!fill || !label) return;
+
+      const hoverBg = btn.dataset.hoverBg || '#144947';
+      const hoverText = btn.dataset.hoverText || '#ffffff';
+      const baseText = getComputedStyle(label).color;
+
+      gsap.set(fill, { backgroundColor: hoverBg, scale: 0, xPercent: -50, yPercent: -50 });
+
+      const place = (cx, cy) => {
+        const r = btn.getBoundingClientRect();
+        const size = Math.hypot(r.width, r.height) * 2;
+        gsap.set(fill, { width: size, height: size, x: cx - r.left, y: cy - r.top });
+      };
+      const center = () => {
+        const r = btn.getBoundingClientRect();
+        return [r.left + r.width / 2, r.top + r.height / 2];
+      };
+      const open = (cx, cy) => {
+        place(cx, cy);
+        gsap.to(fill, { scale: 1, duration: 0.55, ease: 'power3.out', overwrite: true });
+        gsap.to(label, { color: hoverText, duration: 0.3, overwrite: true });
+      };
+      const close = (cx, cy) => {
+        place(cx, cy);
+        gsap.to(fill, { scale: 0, duration: 0.45, ease: 'power3.inOut', overwrite: true });
+        gsap.to(label, { color: baseText, duration: 0.3, overwrite: true });
+      };
+
+      btn.addEventListener('mouseenter', (e) => open(e.clientX, e.clientY));
+      btn.addEventListener('mouseleave', (e) => close(e.clientX, e.clientY));
+      btn.addEventListener('focus', () => open(...center()));
+      btn.addEventListener('blur', () => close(...center()));
+    });
+  }
+
+  /* ---------- 2. Wait for fonts + hero image decode (max 1.2s) ---------- */
+  const heroEl = q('.plumbing-hero-image');
+  const heroImg = heroEl && (heroEl.tagName === 'IMG' ? heroEl : heroEl.querySelector('img'));
+  const decoded =
+    heroImg && heroImg.decode ? heroImg.decode().catch(() => {}) : Promise.resolve();
+  const fontsReady = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
+  const ready = Promise.race([
+    Promise.all([fontsReady, decoded]),
+    new Promise((res) => setTimeout(res, 1200)),
+  ]);
+
+  /* ---------- 3. Timelines ---------- */
+  function init() {
+    initCta();
+
+    const mm = gsap.matchMedia();
+
+    mm.add(
+      {
+        desktop: '(min-width: 1280px) and (prefers-reduced-motion: no-preference)',
+        mobile: '(max-width: 1279px) and (prefers-reduced-motion: no-preference)',
+      },
+      (ctx) => {
+        const { desktop } = ctx.conditions;
+
+        const title = q('.plumbing-hero-title');
+        const desc = q('.plumbing-hero-desc');
+        const cta = q('.plumbing-hero-cta');
+        const checks = qa('.plumbing-hero-check-item');
+        const checkIcons = qa('.plumbing-hero-check-item img');
+        const price = q('.plumbing-hero-pricebox');
+        const hammer = desktop ? q('.plumbing-hero-hammer') : null; // hidden below xl, don't animate
+
+        const targets = [title, desc, cta, price, heroEl, hammer, ...checks].filter(Boolean);
+
+        // Hide immediately so nothing flashes while we wait for fonts / image decode
+        gsap.set(targets, { autoAlpha: 0 });
+
+        let killed = false;
+
+        ready.then(() => {
+          if (killed) return;
+
+          // Promote the big image to its own GPU layer before it moves
+          if (heroEl) gsap.set(heroEl, { willChange: 'transform, opacity', force3D: true });
+
+          const tl = gsap.timeline({ defaults: { ease: 'power3.out', force3D: true } });
+
+          if (desktop) {
+            gsap.set(title, { y: 40 });
+            gsap.set(desc, { y: 20 });
+            gsap.set(cta, { y: 16, scale: 0.92 });
+            gsap.set(checks, { x: -18 });
+            gsap.set(checkIcons, { scale: 0 });
+            gsap.set(price, { y: 24 });
+
+            tl.to(title, { autoAlpha: 1, y: 0, duration: 0.9 }, 0)
+              .to(desc, { autoAlpha: 1, y: 0, duration: 0.7 }, '-=0.5')
+              .to(cta, { autoAlpha: 1, y: 0, scale: 1, duration: 0.6, ease: 'back.out(1.6)' }, '-=0.4')
+              .to(checks, { autoAlpha: 1, x: 0, duration: 0.5, stagger: 0.08 }, '-=0.3')
+              .to(checkIcons, { scale: 1, duration: 0.4, ease: 'back.out(2.5)', stagger: 0.08 }, '<')
+              .to(price, { autoAlpha: 1, y: 0, duration: 0.7 }, '-=0.4');
+
+            if (heroEl) {
+              gsap.fromTo(heroEl, { x: 80, scale: 1.06, autoAlpha: 0 },
+                { x: 0, scale: 1, autoAlpha: 1, duration: 1.3, ease: 'power3.out', delay: 0.1,
+                  onComplete: () => gsap.set(heroEl, { willChange: 'auto' }) });
+            }
+            if (hammer) {
+              gsap.fromTo(hammer,
+                { y: -80, rotation: -18, transformOrigin: '50% 100%', autoAlpha: 0 },
+                { y: 0, rotation: 0, autoAlpha: 1, duration: 1, ease: 'back.out(1.4)', delay: 0.9 });
+            }
+          } else {
+            // Mobile: opacity + small translate only, no scale, no image slide, shorter timings
+            const from = (el, y) => el && gsap.set(el, { y });
+            from(title, 20); from(desc, 14); from(cta, 12); from(price, 14);
+            gsap.set(checks, { y: 10 });
+
+            tl.to(title, { autoAlpha: 1, y: 0, duration: 0.6 }, 0)
+              .to(desc, { autoAlpha: 1, y: 0, duration: 0.5 }, '-=0.35')
+              .to(cta, { autoAlpha: 1, y: 0, duration: 0.45 }, '-=0.3')
+              .to(checks, { autoAlpha: 1, y: 0, duration: 0.4, stagger: 0.05 }, '-=0.2')
+              .to(price, { autoAlpha: 1, y: 0, duration: 0.5 }, '-=0.3');
+
+            if (heroEl) {
+              gsap.to(heroEl, { autoAlpha: 1, duration: 0.7, ease: 'power2.out', delay: 0.15,
+                onComplete: () => gsap.set(heroEl, { willChange: 'auto' }) });
+            }
+          }
+        });
+
+        return () => { killed = true; };
+      }
+    );
+  }
+
+  init();
+})();
+
+
+// 
+// plumbing FAQ section
+document.addEventListener("DOMContentLoaded", function () {
+    const faqItems = document.querySelectorAll(".plumbing-faq-item");
+
+    faqItems.forEach(function (item) {
+        const trigger = item.querySelector(".plumbing-faq-trigger");
+        const content = item.querySelector(".plumbing-faq-content");
+        const icon = item.querySelector(".plumbing-icon-close img");
+
+        trigger.addEventListener("click", function () {
+            const isOpen = item.classList.contains("active");
+
+            // Close all FAQs
+            faqItems.forEach(function (faq) {
+                faq.classList.remove("active");
+
+                const faqContent = faq.querySelector(".plumbing-faq-content");
+                const faqIcon = faq.querySelector(".plumbing-icon-close img");
+
+                faqContent.style.maxHeight = "0px";
+
+                if (faqIcon) {
+                    faqIcon.style.transform = "rotate(0deg)";
+                }
+            });
+
+            // Open clicked FAQ
+            if (!isOpen) {
+                item.classList.add("active");
+
+                content.style.maxHeight = content.scrollHeight + "px";
+
+                if (icon) {
+                    icon.style.transform = "rotate(45deg)";
+                }
+            }
+        });
+    });
+});
