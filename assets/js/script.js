@@ -218,6 +218,7 @@ gsap.ticker.lagSmoothing(0);
 
 // Pixxen Physical plumbing js start
 
+// Plumbing CTA btn
 document.addEventListener('DOMContentLoaded', () => {
   const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -277,6 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// Plumbing project horizontal scroll section
 document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(ScrollTrigger);
 
